@@ -1,0 +1,5732 @@
+{
+  "meta": {
+    "generated_at": "2026-05-06",
+    "total_records": 2035
+  },
+  "count_persona_archetypes": 10,
+  "count_personality_dimensions": 8,
+  "count_schools_pst": 60,
+  "count_school_era_fit": 540,
+  "count_school_archetype_fit": 600,
+  "count_prediction_paths": 37,
+  "count_eminent_persona_profiles": 600,
+  "count_persona_era_translation": 60,
+  "count_scenario_persona_fit": 120,
+  "archetypes": [
+    {
+      "id": "arch_explorer",
+      "name_ja": "探究者",
+      "name_en": "Explorer",
+      "big_five_thresholds": "{\"O\": \">75\", \"C\": \">60\"}",
+      "holland_codes": "I,A",
+      "description": "知的好奇心が強く、新領域への探求を好む。研究者・学者の若年期典型。",
+      "population_pct": 0.12
+    },
+    {
+      "id": "arch_creator",
+      "name_ja": "創造者",
+      "name_en": "Creator",
+      "big_five_thresholds": "{\"O\": \">80\", \"N\": \">55\"}",
+      "holland_codes": "A,I",
+      "description": "内的世界が豊かで創作・表現に向かう。芸術家・作家の若年期典型。",
+      "population_pct": 0.08
+    },
+    {
+      "id": "arch_leader",
+      "name_ja": "リーダー型",
+      "name_en": "Leader",
+      "big_five_thresholds": "{\"E\": \">70\", \"C\": \">65\", \"A\": \"<60\"}",
+      "holland_codes": "E,S",
+      "description": "対人影響力と達成志向。経営者・政治家の若年期典型。",
+      "population_pct": 0.1
+    },
+    {
+      "id": "arch_caregiver",
+      "name_ja": "養育者",
+      "name_en": "Caregiver",
+      "big_five_thresholds": "{\"A\": \">75\", \"E\": \">55\"}",
+      "holland_codes": "S,A",
+      "description": "他者ケア志向。教師・医療専門家・NPO人の若年期典型。",
+      "population_pct": 0.15
+    },
+    {
+      "id": "arch_warrior",
+      "name_ja": "挑戦者",
+      "name_en": "Warrior",
+      "big_five_thresholds": "{\"E\": \">70\", \"C\": \">70\", \"N\": \"<40\"}",
+      "holland_codes": "E,R",
+      "description": "困難に立ち向かう型。アスリート・起業家の若年期典型。",
+      "population_pct": 0.07
+    },
+    {
+      "id": "arch_mediator",
+      "name_ja": "調停者",
+      "name_en": "Mediator",
+      "big_five_thresholds": "{\"A\": \">75\", \"O\": \">65\"}",
+      "holland_codes": "S,E",
+      "description": "対立調整・価値統合志向。外交官・調停者・コミュニティリーダーの若年期典型。",
+      "population_pct": 0.06
+    },
+    {
+      "id": "arch_craftsman",
+      "name_ja": "職人型",
+      "name_en": "Craftsman",
+      "big_five_thresholds": "{\"C\": \">80\", \"O\": \"40-65\"}",
+      "holland_codes": "R,C",
+      "description": "専門技能の磨き上げ志向。技術者・職人・専門家の若年期典型。",
+      "population_pct": 0.12
+    },
+    {
+      "id": "arch_introvert_thinker",
+      "name_ja": "内省思索者",
+      "name_en": "Introvert Thinker",
+      "big_five_thresholds": "{\"E\": \"<40\", \"O\": \">70\", \"N\": \">55\"}",
+      "holland_codes": "I,A",
+      "description": "内向的な思索・観察志向。哲学者・研究者の若年期典型。",
+      "population_pct": 0.09
+    },
+    {
+      "id": "arch_social_creator",
+      "name_ja": "社交創造者",
+      "name_en": "Social Creator",
+      "big_five_thresholds": "{\"E\": \">70\", \"O\": \">75\"}",
+      "holland_codes": "A,E",
+      "description": "社交性と創造性の両立。クリエイター・プロデューサーの若年期典型。",
+      "population_pct": 0.06
+    },
+    {
+      "id": "arch_steady",
+      "name_ja": "堅実型",
+      "name_en": "Steady",
+      "big_five_thresholds": "{\"C\": \">70\", \"A\": \">65\", \"N\": \"<45\"}",
+      "holland_codes": "C,S",
+      "description": "安定志向の堅実型。専門職・公務員の若年期典型。",
+      "population_pct": 0.15
+    }
+  ],
+  "schools_sample": [
+    {
+      "id": 1,
+      "school_name": "開成中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 69.0, \"cult_structure\": 50.0, \"cult_diversity\": 50.0, \"cult_intensity\": 66.0, \"cult_mentor\": 52.0, \"cult_creativity\": 54.0, \"cult_competition\": 66.0, \"cult_community\": 58.0, \"cult_internationality\": 52.0, \"cult_spirituality\": 50.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 2,
+      "school_name": "麻布中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 77.0, \"cult_structure\": 50.0, \"cult_diversity\": 50.0, \"cult_intensity\": 66.0, \"cult_mentor\": 52.0, \"cult_creativity\": 58.0, \"cult_competition\": 66.0, \"cult_community\": 58.0, \"cult_internationality\": 52.0, \"cult_spirituality\": 50.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 3,
+      "school_name": "桜蔭中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 60.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 4,
+      "school_name": "雙葉中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 46.0, \"cult_structure\": 65.0, \"cult_diversity\": 48.0, \"cult_intensity\": 58.0, \"cult_mentor\": 64.0, \"cult_creativity\": 54.0, \"cult_competition\": 50.0, \"cult_community\": 65.0, \"cult_internationality\": 58.0, \"cult_spirituality\": 65.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 5,
+      "school_name": "渋谷教育学園幕張中学校",
+      "prefecture": "千葉県",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 59.0, \"cult_structure\": 56.0, \"cult_diversity\": 69.0, \"cult_intensity\": 61.0, \"cult_mentor\": 51.0, \"cult_creativity\": 57.0, \"cult_competition\": 60.0, \"cult_community\": 56.0, \"cult_internationality\": 63.0, \"cult_spirituality\": 49.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 6,
+      "school_name": "灘中学校",
+      "prefecture": "兵庫県",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 65.0, \"cult_structure\": 50.0, \"cult_diversity\": 50.0, \"cult_intensity\": 70.0, \"cult_mentor\": 52.0, \"cult_creativity\": 58.0, \"cult_competition\": 66.0, \"cult_community\": 58.0, \"cult_internationality\": 52.0, \"cult_spirituality\": 50.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 7,
+      "school_name": "洛南高等学校附属中学校",
+      "prefecture": "京都府",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 43.0, \"cult_structure\": 64.0, \"cult_diversity\": 57.0, \"cult_intensity\": 56.0, \"cult_mentor\": 56.0, \"cult_creativity\": 53.0, \"cult_competition\": 50.0, \"cult_community\": 62.0, \"cult_internationality\": 51.0, \"cult_spirituality\": 63.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 8,
+      "school_name": "広尾学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 59.0, \"cult_structure\": 56.0, \"cult_diversity\": 65.0, \"cult_intensity\": 61.0, \"cult_mentor\": 51.0, \"cult_creativity\": 57.0, \"cult_competition\": 60.0, \"cult_community\": 56.0, \"cult_internationality\": 59.0, \"cult_spirituality\": 49.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 9,
+      "school_name": "神戸女学院中学部",
+      "prefecture": "兵庫県",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 60.0, \"cult_structure\": 61.0, \"cult_diversity\": 51.0, \"cult_intensity\": 57.0, \"cult_mentor\": 62.0, \"cult_creativity\": 57.0, \"cult_competition\": 52.0, \"cult_community\": 63.0, \"cult_internationality\": 60.0, \"cult_spirituality\": 63.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 10,
+      "school_name": "渋谷教育学園渋谷中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 59.0, \"cult_structure\": 56.0, \"cult_diversity\": 65.0, \"cult_intensity\": 61.0, \"cult_mentor\": 51.0, \"cult_creativity\": 57.0, \"cult_competition\": 60.0, \"cult_community\": 56.0, \"cult_internationality\": 59.0, \"cult_spirituality\": 49.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 11,
+      "school_name": "大妻中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 56.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 12,
+      "school_name": "神田女学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 56.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 13,
+      "school_name": "暁星中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 51.0, \"cult_structure\": 60.0, \"cult_diversity\": 48.0, \"cult_intensity\": 63.0, \"cult_mentor\": 60.0, \"cult_creativity\": 52.0, \"cult_competition\": 58.0, \"cult_community\": 64.0, \"cult_internationality\": 56.0, \"cult_spirituality\": 64.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 14,
+      "school_name": "共立女子中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 60.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 15,
+      "school_name": "麹町学園女子中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 56.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 16,
+      "school_name": "女子学院中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 60.0, \"cult_structure\": 61.0, \"cult_diversity\": 51.0, \"cult_intensity\": 57.0, \"cult_mentor\": 62.0, \"cult_creativity\": 57.0, \"cult_competition\": 52.0, \"cult_community\": 63.0, \"cult_internationality\": 60.0, \"cult_spirituality\": 63.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 17,
+      "school_name": "白百合学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 46.0, \"cult_structure\": 65.0, \"cult_diversity\": 48.0, \"cult_intensity\": 58.0, \"cult_mentor\": 64.0, \"cult_creativity\": 54.0, \"cult_competition\": 50.0, \"cult_community\": 65.0, \"cult_internationality\": 58.0, \"cult_spirituality\": 65.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 18,
+      "school_name": "千代田中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 59.0, \"cult_structure\": 56.0, \"cult_diversity\": 61.0, \"cult_intensity\": 61.0, \"cult_mentor\": 51.0, \"cult_creativity\": 57.0, \"cult_competition\": 60.0, \"cult_community\": 56.0, \"cult_internationality\": 55.0, \"cult_spirituality\": 49.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 19,
+      "school_name": "東京家政学院中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 56.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 20,
+      "school_name": "三輪田学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 56.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 21,
+      "school_name": "和洋九段女子中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 56.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 22,
+      "school_name": "開智日本橋学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 71.0, \"cult_structure\": 47.0, \"cult_diversity\": 68.0, \"cult_intensity\": 58.0, \"cult_mentor\": 54.0, \"cult_creativity\": 62.0, \"cult_competition\": 58.0, \"cult_community\": 51.0, \"cult_internationality\": 60.0, \"cult_spirituality\": 48.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 23,
+      "school_name": "慶應義塾中等部",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 61.0, \"cult_structure\": 54.0, \"cult_diversity\": 50.0, \"cult_intensity\": 66.0, \"cult_mentor\": 52.0, \"cult_creativity\": 54.0, \"cult_competition\": 66.0, \"cult_community\": 58.0, \"cult_internationality\": 52.0, \"cult_spirituality\": 50.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 24,
+      "school_name": "芝国際中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 71.0, \"cult_structure\": 47.0, \"cult_diversity\": 68.0, \"cult_intensity\": 58.0, \"cult_mentor\": 54.0, \"cult_creativity\": 62.0, \"cult_competition\": 58.0, \"cult_community\": 51.0, \"cult_internationality\": 60.0, \"cult_spirituality\": 48.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 25,
+      "school_name": "芝中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 61.0, \"cult_structure\": 54.0, \"cult_diversity\": 50.0, \"cult_intensity\": 66.0, \"cult_mentor\": 52.0, \"cult_creativity\": 54.0, \"cult_competition\": 66.0, \"cult_community\": 58.0, \"cult_internationality\": 52.0, \"cult_spirituality\": 50.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 26,
+      "school_name": "頌栄女子学院中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 60.0, \"cult_structure\": 61.0, \"cult_diversity\": 51.0, \"cult_intensity\": 57.0, \"cult_mentor\": 62.0, \"cult_creativity\": 57.0, \"cult_competition\": 52.0, \"cult_community\": 63.0, \"cult_internationality\": 60.0, \"cult_spirituality\": 63.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 27,
+      "school_name": "聖心女子学院中等科",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 46.0, \"cult_structure\": 65.0, \"cult_diversity\": 48.0, \"cult_intensity\": 58.0, \"cult_mentor\": 64.0, \"cult_creativity\": 54.0, \"cult_competition\": 50.0, \"cult_community\": 65.0, \"cult_internationality\": 58.0, \"cult_spirituality\": 65.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 28,
+      "school_name": "高輪中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 61.0, \"cult_structure\": 54.0, \"cult_diversity\": 50.0, \"cult_intensity\": 66.0, \"cult_mentor\": 52.0, \"cult_creativity\": 54.0, \"cult_competition\": 66.0, \"cult_community\": 58.0, \"cult_internationality\": 52.0, \"cult_spirituality\": 50.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 29,
+      "school_name": "東海大学付属高輪台高等学校中等部",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 59.0, \"cult_structure\": 56.0, \"cult_diversity\": 61.0, \"cult_intensity\": 61.0, \"cult_mentor\": 51.0, \"cult_creativity\": 57.0, \"cult_competition\": 60.0, \"cult_community\": 56.0, \"cult_internationality\": 55.0, \"cult_spirituality\": 49.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 30,
+      "school_name": "東洋英和女学院中学部",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 60.0, \"cult_structure\": 61.0, \"cult_diversity\": 51.0, \"cult_intensity\": 57.0, \"cult_mentor\": 62.0, \"cult_creativity\": 57.0, \"cult_competition\": 52.0, \"cult_community\": 63.0, \"cult_internationality\": 60.0, \"cult_spirituality\": 63.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 31,
+      "school_name": "広尾学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 59.0, \"cult_structure\": 56.0, \"cult_diversity\": 61.0, \"cult_intensity\": 61.0, \"cult_mentor\": 51.0, \"cult_creativity\": 57.0, \"cult_competition\": 60.0, \"cult_community\": 56.0, \"cult_internationality\": 55.0, \"cult_spirituality\": 49.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 32,
+      "school_name": "普連土学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 46.0, \"cult_structure\": 65.0, \"cult_diversity\": 48.0, \"cult_intensity\": 58.0, \"cult_mentor\": 64.0, \"cult_creativity\": 54.0, \"cult_competition\": 50.0, \"cult_community\": 65.0, \"cult_internationality\": 58.0, \"cult_spirituality\": 65.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 33,
+      "school_name": "山脇学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 56.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 34,
+      "school_name": "海城中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 61.0, \"cult_structure\": 54.0, \"cult_diversity\": 50.0, \"cult_intensity\": 66.0, \"cult_mentor\": 52.0, \"cult_creativity\": 54.0, \"cult_competition\": 66.0, \"cult_community\": 58.0, \"cult_internationality\": 52.0, \"cult_spirituality\": 50.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 35,
+      "school_name": "学習院女子中等科",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 56.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 36,
+      "school_name": "成城中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 61.0, \"cult_structure\": 54.0, \"cult_diversity\": 50.0, \"cult_intensity\": 66.0, \"cult_mentor\": 52.0, \"cult_creativity\": 54.0, \"cult_competition\": 66.0, \"cult_community\": 58.0, \"cult_internationality\": 52.0, \"cult_spirituality\": 50.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 37,
+      "school_name": "成女学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 56.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 38,
+      "school_name": "目白研心中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 59.0, \"cult_structure\": 56.0, \"cult_diversity\": 61.0, \"cult_intensity\": 61.0, \"cult_mentor\": 51.0, \"cult_creativity\": 57.0, \"cult_competition\": 60.0, \"cult_community\": 56.0, \"cult_internationality\": 55.0, \"cult_spirituality\": 49.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 39,
+      "school_name": "早稲田中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 61.0, \"cult_structure\": 54.0, \"cult_diversity\": 50.0, \"cult_intensity\": 66.0, \"cult_mentor\": 52.0, \"cult_creativity\": 54.0, \"cult_competition\": 66.0, \"cult_community\": 58.0, \"cult_internationality\": 52.0, \"cult_spirituality\": 50.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 40,
+      "school_name": "青山学院中等部",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 63.0, \"cult_structure\": 58.0, \"cult_diversity\": 66.0, \"cult_intensity\": 57.0, \"cult_mentor\": 57.0, \"cult_creativity\": 58.0, \"cult_competition\": 54.0, \"cult_community\": 60.0, \"cult_internationality\": 65.0, \"cult_spirituality\": 61.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 41,
+      "school_name": "実践女子学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 56.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 42,
+      "school_name": "東京女学館中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 56.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 43,
+      "school_name": "富士見丘中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 56.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 44,
+      "school_name": "跡見学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 60.0, \"cult_structure\": 63.0, \"cult_diversity\": 46.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 45,
+      "school_name": "郁文館中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 59.0, \"cult_structure\": 56.0, \"cult_diversity\": 61.0, \"cult_intensity\": 61.0, \"cult_mentor\": 51.0, \"cult_creativity\": 57.0, \"cult_competition\": 60.0, \"cult_community\": 56.0, \"cult_internationality\": 55.0, \"cult_spirituality\": 49.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 46,
+      "school_name": "京華女子中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 56.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 47,
+      "school_name": "京華中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 61.0, \"cult_structure\": 54.0, \"cult_diversity\": 50.0, \"cult_intensity\": 66.0, \"cult_mentor\": 52.0, \"cult_creativity\": 54.0, \"cult_competition\": 66.0, \"cult_community\": 58.0, \"cult_internationality\": 52.0, \"cult_spirituality\": 50.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 48,
+      "school_name": "駒込中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 49.0, \"cult_structure\": 58.0, \"cult_diversity\": 46.0, \"cult_intensity\": 61.0, \"cult_mentor\": 57.0, \"cult_creativity\": 50.0, \"cult_competition\": 56.0, \"cult_community\": 64.0, \"cult_internationality\": 48.0, \"cult_spirituality\": 64.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 49,
+      "school_name": "小石川淑徳学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 59.0, \"cult_structure\": 51.0, \"cult_diversity\": 64.0, \"cult_intensity\": 53.0, \"cult_mentor\": 59.0, \"cult_creativity\": 58.0, \"cult_competition\": 48.0, \"cult_community\": 57.0, \"cult_internationality\": 56.0, \"cult_spirituality\": 62.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 50,
+      "school_name": "貞静学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 56.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 51,
+      "school_name": "鷗友学園女子中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 64.0, \"cult_structure\": 61.0, \"cult_diversity\": 51.0, \"cult_intensity\": 57.0, \"cult_mentor\": 62.0, \"cult_creativity\": 61.0, \"cult_competition\": 52.0, \"cult_community\": 63.0, \"cult_internationality\": 60.0, \"cult_spirituality\": 63.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 52,
+      "school_name": "駒場東邦中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 61.0, \"cult_structure\": 54.0, \"cult_diversity\": 50.0, \"cult_intensity\": 66.0, \"cult_mentor\": 52.0, \"cult_creativity\": 54.0, \"cult_competition\": 66.0, \"cult_community\": 58.0, \"cult_internationality\": 52.0, \"cult_spirituality\": 50.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 53,
+      "school_name": "成城学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 63.0, \"cult_structure\": 56.0, \"cult_diversity\": 61.0, \"cult_intensity\": 61.0, \"cult_mentor\": 51.0, \"cult_creativity\": 61.0, \"cult_competition\": 60.0, \"cult_community\": 56.0, \"cult_internationality\": 55.0, \"cult_spirituality\": 49.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 54,
+      "school_name": "世田谷学園中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 49.0, \"cult_structure\": 58.0, \"cult_diversity\": 46.0, \"cult_intensity\": 61.0, \"cult_mentor\": 57.0, \"cult_creativity\": 50.0, \"cult_competition\": 56.0, \"cult_community\": 64.0, \"cult_internationality\": 48.0, \"cult_spirituality\": 64.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 55,
+      "school_name": "玉川聖学院中等部",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 60.0, \"cult_structure\": 61.0, \"cult_diversity\": 51.0, \"cult_intensity\": 57.0, \"cult_mentor\": 62.0, \"cult_creativity\": 57.0, \"cult_competition\": 52.0, \"cult_community\": 63.0, \"cult_internationality\": 60.0, \"cult_spirituality\": 63.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 56,
+      "school_name": "品川女子学院中等部",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 60.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 57,
+      "school_name": "攻玉社中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 61.0, \"cult_structure\": 54.0, \"cult_diversity\": 50.0, \"cult_intensity\": 66.0, \"cult_mentor\": 52.0, \"cult_creativity\": 54.0, \"cult_competition\": 66.0, \"cult_community\": 58.0, \"cult_internationality\": 52.0, \"cult_spirituality\": 50.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 58,
+      "school_name": "香蘭女学校中等科",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 60.0, \"cult_structure\": 61.0, \"cult_diversity\": 51.0, \"cult_intensity\": 57.0, \"cult_mentor\": 62.0, \"cult_creativity\": 57.0, \"cult_competition\": 52.0, \"cult_community\": 63.0, \"cult_internationality\": 60.0, \"cult_spirituality\": 67.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 59,
+      "school_name": "青稜中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 63.0, \"cult_structure\": 52.0, \"cult_diversity\": 61.0, \"cult_intensity\": 61.0, \"cult_mentor\": 51.0, \"cult_creativity\": 57.0, \"cult_competition\": 60.0, \"cult_community\": 56.0, \"cult_internationality\": 55.0, \"cult_spirituality\": 49.0}",
+      "philosophy_summary": null
+    },
+    {
+      "id": 60,
+      "school_name": "吉祥女子中学校",
+      "prefecture": "東京都",
+      "lca_cluster": null,
+      "culture_profile": "{\"cult_autonomy\": 60.0, \"cult_structure\": 59.0, \"cult_diversity\": 50.0, \"cult_intensity\": 61.0, \"cult_mentor\": 56.0, \"cult_creativity\": 56.0, \"cult_competition\": 58.0, \"cult_community\": 59.0, \"cult_internationality\": 54.0, \"cult_spirituality\": 51.0}",
+      "philosophy_summary": null
+    }
+  ],
+  "archetype_top_schools": [
+    {
+      "archetype_id": "arch_explorer",
+      "archetype_name": "探究者",
+      "top_schools": [
+        {
+          "school_name": "成城学園中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.85,
+          "fit_type": "direct_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "開成中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.8,
+          "fit_type": "direct_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "麻布中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.8,
+          "fit_type": "direct_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "桜蔭中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.8,
+          "fit_type": "direct_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "灘中学校",
+          "prefecture": "兵庫県",
+          "fit_score": 0.8,
+          "fit_type": "direct_fit",
+          "rationale": "適合度を評価しました。"
+        }
+      ]
+    },
+    {
+      "archetype_id": "arch_creator",
+      "archetype_name": "創造者",
+      "top_schools": [
+        {
+          "school_name": "開智日本橋学園中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.725,
+          "fit_type": "direct_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "芝国際中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.725,
+          "fit_type": "direct_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "麻布中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "雙葉中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.575,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "渋谷教育学園幕張中学校",
+          "prefecture": "千葉県",
+          "fit_score": 0.575,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        }
+      ]
+    },
+    {
+      "archetype_id": "arch_leader",
+      "archetype_name": "リーダー型",
+      "top_schools": [
+        {
+          "school_name": "雙葉中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "洛南高等学校附属中学校",
+          "prefecture": "京都府",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "神戸女学院中学部",
+          "prefecture": "兵庫県",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "暁星中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "女子学院中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        }
+      ]
+    },
+    {
+      "archetype_id": "arch_caregiver",
+      "archetype_name": "養育者",
+      "top_schools": [
+        {
+          "school_name": "青山学院中等部",
+          "prefecture": "東京都",
+          "fit_score": 0.725,
+          "fit_type": "direct_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "小石川淑徳学園中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.725,
+          "fit_type": "direct_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "雙葉中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "洛南高等学校附属中学校",
+          "prefecture": "京都府",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "神戸女学院中学部",
+          "prefecture": "兵庫県",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        }
+      ]
+    },
+    {
+      "archetype_id": "arch_warrior",
+      "archetype_name": "挑戦者",
+      "top_schools": [
+        {
+          "school_name": "雙葉中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "神戸女学院中学部",
+          "prefecture": "兵庫県",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "暁星中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "女子学院中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "白百合学園中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        }
+      ]
+    },
+    {
+      "archetype_id": "arch_mediator",
+      "archetype_name": "調停者",
+      "top_schools": [
+        {
+          "school_name": "開成中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "麻布中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "桜蔭中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "雙葉中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "渋谷教育学園幕張中学校",
+          "prefecture": "千葉県",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        }
+      ]
+    },
+    {
+      "archetype_id": "arch_craftsman",
+      "archetype_name": "職人型",
+      "top_schools": [
+        {
+          "school_name": "開成中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "麻布中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "桜蔭中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "渋谷教育学園幕張中学校",
+          "prefecture": "千葉県",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "灘中学校",
+          "prefecture": "兵庫県",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        }
+      ]
+    },
+    {
+      "archetype_id": "arch_introvert_thinker",
+      "archetype_name": "内省思索者",
+      "top_schools": [
+        {
+          "school_name": "麻布中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "開智日本橋学園中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "芝国際中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.65,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "雙葉中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.575,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "神戸女学院中学部",
+          "prefecture": "兵庫県",
+          "fit_score": 0.575,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        }
+      ]
+    },
+    {
+      "archetype_id": "arch_social_creator",
+      "archetype_name": "社交創造者",
+      "top_schools": [
+        {
+          "school_name": "開成中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "麻布中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "桜蔭中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "雙葉中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "渋谷教育学園幕張中学校",
+          "prefecture": "千葉県",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        }
+      ]
+    },
+    {
+      "archetype_id": "arch_steady",
+      "archetype_name": "堅実型",
+      "top_schools": [
+        {
+          "school_name": "開成中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "桜蔭中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "雙葉中学校",
+          "prefecture": "東京都",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "渋谷教育学園幕張中学校",
+          "prefecture": "千葉県",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        },
+        {
+          "school_name": "灘中学校",
+          "prefecture": "兵庫県",
+          "fit_score": 0.5,
+          "fit_type": "stretch_fit",
+          "rationale": "適合度を評価しました。"
+        }
+      ]
+    }
+  ],
+  "era_school_heatmap": [
+    {
+      "school_id": 1,
+      "school_name": "開成中学校",
+      "era_id": "meiji",
+      "fit_score": 0.63
+    },
+    {
+      "school_id": 1,
+      "school_name": "開成中学校",
+      "era_id": "taisho",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 1,
+      "school_name": "開成中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 1,
+      "school_name": "開成中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 1,
+      "school_name": "開成中学校",
+      "era_id": "heisei",
+      "fit_score": 0.68
+    },
+    {
+      "school_id": 1,
+      "school_name": "開成中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 1,
+      "school_name": "開成中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 1,
+      "school_name": "開成中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 1,
+      "school_name": "開成中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 2,
+      "school_name": "麻布中学校",
+      "era_id": "meiji",
+      "fit_score": 0.63
+    },
+    {
+      "school_id": 2,
+      "school_name": "麻布中学校",
+      "era_id": "taisho",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 2,
+      "school_name": "麻布中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 2,
+      "school_name": "麻布中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 2,
+      "school_name": "麻布中学校",
+      "era_id": "heisei",
+      "fit_score": 0.72
+    },
+    {
+      "school_id": 2,
+      "school_name": "麻布中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 2,
+      "school_name": "麻布中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 2,
+      "school_name": "麻布中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 2,
+      "school_name": "麻布中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 3,
+      "school_name": "桜蔭中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 3,
+      "school_name": "桜蔭中学校",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 3,
+      "school_name": "桜蔭中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 3,
+      "school_name": "桜蔭中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 3,
+      "school_name": "桜蔭中学校",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 3,
+      "school_name": "桜蔭中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 3,
+      "school_name": "桜蔭中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 3,
+      "school_name": "桜蔭中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 3,
+      "school_name": "桜蔭中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 4,
+      "school_name": "雙葉中学校",
+      "era_id": "meiji",
+      "fit_score": 0.67
+    },
+    {
+      "school_id": 4,
+      "school_name": "雙葉中学校",
+      "era_id": "taisho",
+      "fit_score": 0.45
+    },
+    {
+      "school_id": 4,
+      "school_name": "雙葉中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 4,
+      "school_name": "雙葉中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 4,
+      "school_name": "雙葉中学校",
+      "era_id": "heisei",
+      "fit_score": 0.52
+    },
+    {
+      "school_id": 4,
+      "school_name": "雙葉中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.49
+    },
+    {
+      "school_id": 4,
+      "school_name": "雙葉中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 4,
+      "school_name": "雙葉中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.61
+    },
+    {
+      "school_id": 4,
+      "school_name": "雙葉中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 5,
+      "school_name": "渋谷教育学園幕張中学校",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 5,
+      "school_name": "渋谷教育学園幕張中学校",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 5,
+      "school_name": "渋谷教育学園幕張中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 5,
+      "school_name": "渋谷教育学園幕張中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 5,
+      "school_name": "渋谷教育学園幕張中学校",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 5,
+      "school_name": "渋谷教育学園幕張中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 5,
+      "school_name": "渋谷教育学園幕張中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.61
+    },
+    {
+      "school_id": 5,
+      "school_name": "渋谷教育学園幕張中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.69
+    },
+    {
+      "school_id": 5,
+      "school_name": "渋谷教育学園幕張中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.63
+    },
+    {
+      "school_id": 6,
+      "school_name": "灘中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 6,
+      "school_name": "灘中学校",
+      "era_id": "taisho",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 6,
+      "school_name": "灘中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 6,
+      "school_name": "灘中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 6,
+      "school_name": "灘中学校",
+      "era_id": "heisei",
+      "fit_score": 0.68
+    },
+    {
+      "school_id": 6,
+      "school_name": "灘中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 6,
+      "school_name": "灘中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 6,
+      "school_name": "灘中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 6,
+      "school_name": "灘中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 7,
+      "school_name": "洛南高等学校附属中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 7,
+      "school_name": "洛南高等学校附属中学校",
+      "era_id": "taisho",
+      "fit_score": 0.43
+    },
+    {
+      "school_id": 7,
+      "school_name": "洛南高等学校附属中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 7,
+      "school_name": "洛南高等学校附属中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.63
+    },
+    {
+      "school_id": 7,
+      "school_name": "洛南高等学校附属中学校",
+      "era_id": "heisei",
+      "fit_score": 0.49
+    },
+    {
+      "school_id": 7,
+      "school_name": "洛南高等学校附属中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 7,
+      "school_name": "洛南高等学校附属中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.5
+    },
+    {
+      "school_id": 7,
+      "school_name": "洛南高等学校附属中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 7,
+      "school_name": "洛南高等学校附属中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 8,
+      "school_name": "広尾学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 8,
+      "school_name": "広尾学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 8,
+      "school_name": "広尾学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 8,
+      "school_name": "広尾学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 8,
+      "school_name": "広尾学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 8,
+      "school_name": "広尾学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 8,
+      "school_name": "広尾学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 8,
+      "school_name": "広尾学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.67
+    },
+    {
+      "school_id": 8,
+      "school_name": "広尾学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.61
+    },
+    {
+      "school_id": 9,
+      "school_name": "神戸女学院中学部",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 9,
+      "school_name": "神戸女学院中学部",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 9,
+      "school_name": "神戸女学院中学部",
+      "era_id": "showa_pre",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 9,
+      "school_name": "神戸女学院中学部",
+      "era_id": "showa_post",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 9,
+      "school_name": "神戸女学院中学部",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 9,
+      "school_name": "神戸女学院中学部",
+      "era_id": "reiwa",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 9,
+      "school_name": "神戸女学院中学部",
+      "era_id": "future_2030",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 9,
+      "school_name": "神戸女学院中学部",
+      "era_id": "future_2050",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 9,
+      "school_name": "神戸女学院中学部",
+      "era_id": "future_2100",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 10,
+      "school_name": "渋谷教育学園渋谷中学校",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 10,
+      "school_name": "渋谷教育学園渋谷中学校",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 10,
+      "school_name": "渋谷教育学園渋谷中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 10,
+      "school_name": "渋谷教育学園渋谷中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 10,
+      "school_name": "渋谷教育学園渋谷中学校",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 10,
+      "school_name": "渋谷教育学園渋谷中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 10,
+      "school_name": "渋谷教育学園渋谷中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 10,
+      "school_name": "渋谷教育学園渋谷中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.67
+    },
+    {
+      "school_id": 10,
+      "school_name": "渋谷教育学園渋谷中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.61
+    },
+    {
+      "school_id": 11,
+      "school_name": "大妻中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 11,
+      "school_name": "大妻中学校",
+      "era_id": "taisho",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 11,
+      "school_name": "大妻中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 11,
+      "school_name": "大妻中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 11,
+      "school_name": "大妻中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 11,
+      "school_name": "大妻中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 11,
+      "school_name": "大妻中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 11,
+      "school_name": "大妻中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 11,
+      "school_name": "大妻中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 12,
+      "school_name": "神田女学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 12,
+      "school_name": "神田女学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 12,
+      "school_name": "神田女学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 12,
+      "school_name": "神田女学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 12,
+      "school_name": "神田女学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 12,
+      "school_name": "神田女学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 12,
+      "school_name": "神田女学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 12,
+      "school_name": "神田女学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 12,
+      "school_name": "神田女学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 13,
+      "school_name": "暁星中学校",
+      "era_id": "meiji",
+      "fit_score": 0.67
+    },
+    {
+      "school_id": 13,
+      "school_name": "暁星中学校",
+      "era_id": "taisho",
+      "fit_score": 0.47
+    },
+    {
+      "school_id": 13,
+      "school_name": "暁星中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 13,
+      "school_name": "暁星中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 13,
+      "school_name": "暁星中学校",
+      "era_id": "heisei",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 13,
+      "school_name": "暁星中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.5
+    },
+    {
+      "school_id": 13,
+      "school_name": "暁星中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 13,
+      "school_name": "暁星中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.61
+    },
+    {
+      "school_id": 13,
+      "school_name": "暁星中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 14,
+      "school_name": "共立女子中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 14,
+      "school_name": "共立女子中学校",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 14,
+      "school_name": "共立女子中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 14,
+      "school_name": "共立女子中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 14,
+      "school_name": "共立女子中学校",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 14,
+      "school_name": "共立女子中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 14,
+      "school_name": "共立女子中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 14,
+      "school_name": "共立女子中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 14,
+      "school_name": "共立女子中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 15,
+      "school_name": "麹町学園女子中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 15,
+      "school_name": "麹町学園女子中学校",
+      "era_id": "taisho",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 15,
+      "school_name": "麹町学園女子中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 15,
+      "school_name": "麹町学園女子中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 15,
+      "school_name": "麹町学園女子中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 15,
+      "school_name": "麹町学園女子中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 15,
+      "school_name": "麹町学園女子中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 15,
+      "school_name": "麹町学園女子中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 15,
+      "school_name": "麹町学園女子中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 16,
+      "school_name": "女子学院中学校",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 16,
+      "school_name": "女子学院中学校",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 16,
+      "school_name": "女子学院中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 16,
+      "school_name": "女子学院中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 16,
+      "school_name": "女子学院中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 16,
+      "school_name": "女子学院中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 16,
+      "school_name": "女子学院中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 16,
+      "school_name": "女子学院中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 16,
+      "school_name": "女子学院中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 17,
+      "school_name": "白百合学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.67
+    },
+    {
+      "school_id": 17,
+      "school_name": "白百合学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.45
+    },
+    {
+      "school_id": 17,
+      "school_name": "白百合学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 17,
+      "school_name": "白百合学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 17,
+      "school_name": "白百合学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.52
+    },
+    {
+      "school_id": 17,
+      "school_name": "白百合学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.49
+    },
+    {
+      "school_id": 17,
+      "school_name": "白百合学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 17,
+      "school_name": "白百合学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.61
+    },
+    {
+      "school_id": 17,
+      "school_name": "白百合学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 18,
+      "school_name": "千代田中学校",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 18,
+      "school_name": "千代田中学校",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 18,
+      "school_name": "千代田中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 18,
+      "school_name": "千代田中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 18,
+      "school_name": "千代田中学校",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 18,
+      "school_name": "千代田中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 18,
+      "school_name": "千代田中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 18,
+      "school_name": "千代田中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 18,
+      "school_name": "千代田中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 19,
+      "school_name": "東京家政学院中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 19,
+      "school_name": "東京家政学院中学校",
+      "era_id": "taisho",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 19,
+      "school_name": "東京家政学院中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 19,
+      "school_name": "東京家政学院中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 19,
+      "school_name": "東京家政学院中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 19,
+      "school_name": "東京家政学院中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 19,
+      "school_name": "東京家政学院中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 19,
+      "school_name": "東京家政学院中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 19,
+      "school_name": "東京家政学院中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 20,
+      "school_name": "三輪田学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 20,
+      "school_name": "三輪田学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 20,
+      "school_name": "三輪田学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 20,
+      "school_name": "三輪田学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 20,
+      "school_name": "三輪田学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 20,
+      "school_name": "三輪田学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 20,
+      "school_name": "三輪田学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 20,
+      "school_name": "三輪田学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 20,
+      "school_name": "三輪田学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 21,
+      "school_name": "和洋九段女子中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 21,
+      "school_name": "和洋九段女子中学校",
+      "era_id": "taisho",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 21,
+      "school_name": "和洋九段女子中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 21,
+      "school_name": "和洋九段女子中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 21,
+      "school_name": "和洋九段女子中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 21,
+      "school_name": "和洋九段女子中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 21,
+      "school_name": "和洋九段女子中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 21,
+      "school_name": "和洋九段女子中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 21,
+      "school_name": "和洋九段女子中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 22,
+      "school_name": "開智日本橋学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 22,
+      "school_name": "開智日本橋学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.61
+    },
+    {
+      "school_id": 22,
+      "school_name": "開智日本橋学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 22,
+      "school_name": "開智日本橋学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.49
+    },
+    {
+      "school_id": 22,
+      "school_name": "開智日本橋学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 22,
+      "school_name": "開智日本橋学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.67
+    },
+    {
+      "school_id": 22,
+      "school_name": "開智日本橋学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.63
+    },
+    {
+      "school_id": 22,
+      "school_name": "開智日本橋学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.66
+    },
+    {
+      "school_id": 22,
+      "school_name": "開智日本橋学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.63
+    },
+    {
+      "school_id": 23,
+      "school_name": "慶應義塾中等部",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 23,
+      "school_name": "慶應義塾中等部",
+      "era_id": "taisho",
+      "fit_score": 0.52
+    },
+    {
+      "school_id": 23,
+      "school_name": "慶應義塾中等部",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 23,
+      "school_name": "慶應義塾中等部",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 23,
+      "school_name": "慶應義塾中等部",
+      "era_id": "heisei",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 23,
+      "school_name": "慶應義塾中等部",
+      "era_id": "reiwa",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 23,
+      "school_name": "慶應義塾中等部",
+      "era_id": "future_2030",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 23,
+      "school_name": "慶應義塾中等部",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 23,
+      "school_name": "慶應義塾中等部",
+      "era_id": "future_2100",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 24,
+      "school_name": "芝国際中学校",
+      "era_id": "meiji",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 24,
+      "school_name": "芝国際中学校",
+      "era_id": "taisho",
+      "fit_score": 0.61
+    },
+    {
+      "school_id": 24,
+      "school_name": "芝国際中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 24,
+      "school_name": "芝国際中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.49
+    },
+    {
+      "school_id": 24,
+      "school_name": "芝国際中学校",
+      "era_id": "heisei",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 24,
+      "school_name": "芝国際中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.67
+    },
+    {
+      "school_id": 24,
+      "school_name": "芝国際中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.63
+    },
+    {
+      "school_id": 24,
+      "school_name": "芝国際中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.66
+    },
+    {
+      "school_id": 24,
+      "school_name": "芝国際中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.63
+    },
+    {
+      "school_id": 25,
+      "school_name": "芝中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 25,
+      "school_name": "芝中学校",
+      "era_id": "taisho",
+      "fit_score": 0.52
+    },
+    {
+      "school_id": 25,
+      "school_name": "芝中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 25,
+      "school_name": "芝中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 25,
+      "school_name": "芝中学校",
+      "era_id": "heisei",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 25,
+      "school_name": "芝中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 25,
+      "school_name": "芝中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 25,
+      "school_name": "芝中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 25,
+      "school_name": "芝中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 26,
+      "school_name": "頌栄女子学院中学校",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 26,
+      "school_name": "頌栄女子学院中学校",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 26,
+      "school_name": "頌栄女子学院中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 26,
+      "school_name": "頌栄女子学院中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 26,
+      "school_name": "頌栄女子学院中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 26,
+      "school_name": "頌栄女子学院中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 26,
+      "school_name": "頌栄女子学院中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 26,
+      "school_name": "頌栄女子学院中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 26,
+      "school_name": "頌栄女子学院中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 27,
+      "school_name": "聖心女子学院中等科",
+      "era_id": "meiji",
+      "fit_score": 0.67
+    },
+    {
+      "school_id": 27,
+      "school_name": "聖心女子学院中等科",
+      "era_id": "taisho",
+      "fit_score": 0.45
+    },
+    {
+      "school_id": 27,
+      "school_name": "聖心女子学院中等科",
+      "era_id": "showa_pre",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 27,
+      "school_name": "聖心女子学院中等科",
+      "era_id": "showa_post",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 27,
+      "school_name": "聖心女子学院中等科",
+      "era_id": "heisei",
+      "fit_score": 0.52
+    },
+    {
+      "school_id": 27,
+      "school_name": "聖心女子学院中等科",
+      "era_id": "reiwa",
+      "fit_score": 0.49
+    },
+    {
+      "school_id": 27,
+      "school_name": "聖心女子学院中等科",
+      "era_id": "future_2030",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 27,
+      "school_name": "聖心女子学院中等科",
+      "era_id": "future_2050",
+      "fit_score": 0.61
+    },
+    {
+      "school_id": 27,
+      "school_name": "聖心女子学院中等科",
+      "era_id": "future_2100",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 28,
+      "school_name": "高輪中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 28,
+      "school_name": "高輪中学校",
+      "era_id": "taisho",
+      "fit_score": 0.52
+    },
+    {
+      "school_id": 28,
+      "school_name": "高輪中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 28,
+      "school_name": "高輪中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 28,
+      "school_name": "高輪中学校",
+      "era_id": "heisei",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 28,
+      "school_name": "高輪中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 28,
+      "school_name": "高輪中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 28,
+      "school_name": "高輪中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 28,
+      "school_name": "高輪中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 29,
+      "school_name": "東海大学付属高輪台高等学校中等部",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 29,
+      "school_name": "東海大学付属高輪台高等学校中等部",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 29,
+      "school_name": "東海大学付属高輪台高等学校中等部",
+      "era_id": "showa_pre",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 29,
+      "school_name": "東海大学付属高輪台高等学校中等部",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 29,
+      "school_name": "東海大学付属高輪台高等学校中等部",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 29,
+      "school_name": "東海大学付属高輪台高等学校中等部",
+      "era_id": "reiwa",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 29,
+      "school_name": "東海大学付属高輪台高等学校中等部",
+      "era_id": "future_2030",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 29,
+      "school_name": "東海大学付属高輪台高等学校中等部",
+      "era_id": "future_2050",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 29,
+      "school_name": "東海大学付属高輪台高等学校中等部",
+      "era_id": "future_2100",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 30,
+      "school_name": "東洋英和女学院中学部",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 30,
+      "school_name": "東洋英和女学院中学部",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 30,
+      "school_name": "東洋英和女学院中学部",
+      "era_id": "showa_pre",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 30,
+      "school_name": "東洋英和女学院中学部",
+      "era_id": "showa_post",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 30,
+      "school_name": "東洋英和女学院中学部",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 30,
+      "school_name": "東洋英和女学院中学部",
+      "era_id": "reiwa",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 30,
+      "school_name": "東洋英和女学院中学部",
+      "era_id": "future_2030",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 30,
+      "school_name": "東洋英和女学院中学部",
+      "era_id": "future_2050",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 30,
+      "school_name": "東洋英和女学院中学部",
+      "era_id": "future_2100",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 31,
+      "school_name": "広尾学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 31,
+      "school_name": "広尾学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 31,
+      "school_name": "広尾学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 31,
+      "school_name": "広尾学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 31,
+      "school_name": "広尾学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 31,
+      "school_name": "広尾学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 31,
+      "school_name": "広尾学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 31,
+      "school_name": "広尾学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 31,
+      "school_name": "広尾学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 32,
+      "school_name": "普連土学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.67
+    },
+    {
+      "school_id": 32,
+      "school_name": "普連土学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.45
+    },
+    {
+      "school_id": 32,
+      "school_name": "普連土学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 32,
+      "school_name": "普連土学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 32,
+      "school_name": "普連土学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.52
+    },
+    {
+      "school_id": 32,
+      "school_name": "普連土学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.49
+    },
+    {
+      "school_id": 32,
+      "school_name": "普連土学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 32,
+      "school_name": "普連土学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.61
+    },
+    {
+      "school_id": 32,
+      "school_name": "普連土学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 33,
+      "school_name": "山脇学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 33,
+      "school_name": "山脇学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 33,
+      "school_name": "山脇学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 33,
+      "school_name": "山脇学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 33,
+      "school_name": "山脇学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 33,
+      "school_name": "山脇学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 33,
+      "school_name": "山脇学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 33,
+      "school_name": "山脇学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 33,
+      "school_name": "山脇学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 34,
+      "school_name": "海城中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 34,
+      "school_name": "海城中学校",
+      "era_id": "taisho",
+      "fit_score": 0.52
+    },
+    {
+      "school_id": 34,
+      "school_name": "海城中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 34,
+      "school_name": "海城中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 34,
+      "school_name": "海城中学校",
+      "era_id": "heisei",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 34,
+      "school_name": "海城中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 34,
+      "school_name": "海城中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 34,
+      "school_name": "海城中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 34,
+      "school_name": "海城中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 35,
+      "school_name": "学習院女子中等科",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 35,
+      "school_name": "学習院女子中等科",
+      "era_id": "taisho",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 35,
+      "school_name": "学習院女子中等科",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 35,
+      "school_name": "学習院女子中等科",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 35,
+      "school_name": "学習院女子中等科",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 35,
+      "school_name": "学習院女子中等科",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 35,
+      "school_name": "学習院女子中等科",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 35,
+      "school_name": "学習院女子中等科",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 35,
+      "school_name": "学習院女子中等科",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 36,
+      "school_name": "成城中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 36,
+      "school_name": "成城中学校",
+      "era_id": "taisho",
+      "fit_score": 0.52
+    },
+    {
+      "school_id": 36,
+      "school_name": "成城中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 36,
+      "school_name": "成城中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 36,
+      "school_name": "成城中学校",
+      "era_id": "heisei",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 36,
+      "school_name": "成城中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 36,
+      "school_name": "成城中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 36,
+      "school_name": "成城中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 36,
+      "school_name": "成城中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 37,
+      "school_name": "成女学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 37,
+      "school_name": "成女学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 37,
+      "school_name": "成女学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 37,
+      "school_name": "成女学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 37,
+      "school_name": "成女学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 37,
+      "school_name": "成女学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 37,
+      "school_name": "成女学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 37,
+      "school_name": "成女学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 37,
+      "school_name": "成女学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 38,
+      "school_name": "目白研心中学校",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 38,
+      "school_name": "目白研心中学校",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 38,
+      "school_name": "目白研心中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 38,
+      "school_name": "目白研心中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 38,
+      "school_name": "目白研心中学校",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 38,
+      "school_name": "目白研心中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 38,
+      "school_name": "目白研心中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 38,
+      "school_name": "目白研心中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 38,
+      "school_name": "目白研心中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 39,
+      "school_name": "早稲田中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 39,
+      "school_name": "早稲田中学校",
+      "era_id": "taisho",
+      "fit_score": 0.52
+    },
+    {
+      "school_id": 39,
+      "school_name": "早稲田中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 39,
+      "school_name": "早稲田中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 39,
+      "school_name": "早稲田中学校",
+      "era_id": "heisei",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 39,
+      "school_name": "早稲田中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 39,
+      "school_name": "早稲田中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 39,
+      "school_name": "早稲田中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 39,
+      "school_name": "早稲田中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 40,
+      "school_name": "青山学院中等部",
+      "era_id": "meiji",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 40,
+      "school_name": "青山学院中等部",
+      "era_id": "taisho",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 40,
+      "school_name": "青山学院中等部",
+      "era_id": "showa_pre",
+      "fit_score": 0.63
+    },
+    {
+      "school_id": 40,
+      "school_name": "青山学院中等部",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 40,
+      "school_name": "青山学院中等部",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 40,
+      "school_name": "青山学院中等部",
+      "era_id": "reiwa",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 40,
+      "school_name": "青山学院中等部",
+      "era_id": "future_2030",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 40,
+      "school_name": "青山学院中等部",
+      "era_id": "future_2050",
+      "fit_score": 0.7
+    },
+    {
+      "school_id": 40,
+      "school_name": "青山学院中等部",
+      "era_id": "future_2100",
+      "fit_score": 0.68
+    },
+    {
+      "school_id": 41,
+      "school_name": "実践女子学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 41,
+      "school_name": "実践女子学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 41,
+      "school_name": "実践女子学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 41,
+      "school_name": "実践女子学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 41,
+      "school_name": "実践女子学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 41,
+      "school_name": "実践女子学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 41,
+      "school_name": "実践女子学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 41,
+      "school_name": "実践女子学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 41,
+      "school_name": "実践女子学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 42,
+      "school_name": "東京女学館中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 42,
+      "school_name": "東京女学館中学校",
+      "era_id": "taisho",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 42,
+      "school_name": "東京女学館中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 42,
+      "school_name": "東京女学館中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 42,
+      "school_name": "東京女学館中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 42,
+      "school_name": "東京女学館中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 42,
+      "school_name": "東京女学館中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 42,
+      "school_name": "東京女学館中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 42,
+      "school_name": "東京女学館中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 43,
+      "school_name": "富士見丘中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 43,
+      "school_name": "富士見丘中学校",
+      "era_id": "taisho",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 43,
+      "school_name": "富士見丘中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 43,
+      "school_name": "富士見丘中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 43,
+      "school_name": "富士見丘中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 43,
+      "school_name": "富士見丘中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 43,
+      "school_name": "富士見丘中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 43,
+      "school_name": "富士見丘中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 43,
+      "school_name": "富士見丘中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 44,
+      "school_name": "跡見学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.67
+    },
+    {
+      "school_id": 44,
+      "school_name": "跡見学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 44,
+      "school_name": "跡見学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 44,
+      "school_name": "跡見学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.61
+    },
+    {
+      "school_id": 44,
+      "school_name": "跡見学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 44,
+      "school_name": "跡見学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 44,
+      "school_name": "跡見学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 44,
+      "school_name": "跡見学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 44,
+      "school_name": "跡見学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 45,
+      "school_name": "郁文館中学校",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 45,
+      "school_name": "郁文館中学校",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 45,
+      "school_name": "郁文館中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 45,
+      "school_name": "郁文館中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 45,
+      "school_name": "郁文館中学校",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 45,
+      "school_name": "郁文館中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 45,
+      "school_name": "郁文館中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 45,
+      "school_name": "郁文館中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 45,
+      "school_name": "郁文館中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 46,
+      "school_name": "京華女子中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 46,
+      "school_name": "京華女子中学校",
+      "era_id": "taisho",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 46,
+      "school_name": "京華女子中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 46,
+      "school_name": "京華女子中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 46,
+      "school_name": "京華女子中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 46,
+      "school_name": "京華女子中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 46,
+      "school_name": "京華女子中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 46,
+      "school_name": "京華女子中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 46,
+      "school_name": "京華女子中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 47,
+      "school_name": "京華中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 47,
+      "school_name": "京華中学校",
+      "era_id": "taisho",
+      "fit_score": 0.52
+    },
+    {
+      "school_id": 47,
+      "school_name": "京華中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 47,
+      "school_name": "京華中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 47,
+      "school_name": "京華中学校",
+      "era_id": "heisei",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 47,
+      "school_name": "京華中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 47,
+      "school_name": "京華中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 47,
+      "school_name": "京華中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 47,
+      "school_name": "京華中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 48,
+      "school_name": "駒込中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 48,
+      "school_name": "駒込中学校",
+      "era_id": "taisho",
+      "fit_score": 0.45
+    },
+    {
+      "school_id": 48,
+      "school_name": "駒込中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 48,
+      "school_name": "駒込中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.61
+    },
+    {
+      "school_id": 48,
+      "school_name": "駒込中学校",
+      "era_id": "heisei",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 48,
+      "school_name": "駒込中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.48
+    },
+    {
+      "school_id": 48,
+      "school_name": "駒込中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 48,
+      "school_name": "駒込中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 48,
+      "school_name": "駒込中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 49,
+      "school_name": "小石川淑徳学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 49,
+      "school_name": "小石川淑徳学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 49,
+      "school_name": "小石川淑徳学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 49,
+      "school_name": "小石川淑徳学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 49,
+      "school_name": "小石川淑徳学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 49,
+      "school_name": "小石川淑徳学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 49,
+      "school_name": "小石川淑徳学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 49,
+      "school_name": "小石川淑徳学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.67
+    },
+    {
+      "school_id": 49,
+      "school_name": "小石川淑徳学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.68
+    },
+    {
+      "school_id": 50,
+      "school_name": "貞静学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 50,
+      "school_name": "貞静学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.51
+    },
+    {
+      "school_id": 50,
+      "school_name": "貞静学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 50,
+      "school_name": "貞静学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 50,
+      "school_name": "貞静学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 50,
+      "school_name": "貞静学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 50,
+      "school_name": "貞静学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 50,
+      "school_name": "貞静学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 50,
+      "school_name": "貞静学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 51,
+      "school_name": "鷗友学園女子中学校",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 51,
+      "school_name": "鷗友学園女子中学校",
+      "era_id": "taisho",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 51,
+      "school_name": "鷗友学園女子中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 51,
+      "school_name": "鷗友学園女子中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 51,
+      "school_name": "鷗友学園女子中学校",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 51,
+      "school_name": "鷗友学園女子中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 51,
+      "school_name": "鷗友学園女子中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 51,
+      "school_name": "鷗友学園女子中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 51,
+      "school_name": "鷗友学園女子中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 52,
+      "school_name": "駒場東邦中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 52,
+      "school_name": "駒場東邦中学校",
+      "era_id": "taisho",
+      "fit_score": 0.52
+    },
+    {
+      "school_id": 52,
+      "school_name": "駒場東邦中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 52,
+      "school_name": "駒場東邦中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 52,
+      "school_name": "駒場東邦中学校",
+      "era_id": "heisei",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 52,
+      "school_name": "駒場東邦中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 52,
+      "school_name": "駒場東邦中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 52,
+      "school_name": "駒場東邦中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 52,
+      "school_name": "駒場東邦中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 53,
+      "school_name": "成城学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 53,
+      "school_name": "成城学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 53,
+      "school_name": "成城学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 53,
+      "school_name": "成城学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 53,
+      "school_name": "成城学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 53,
+      "school_name": "成城学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 53,
+      "school_name": "成城学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 53,
+      "school_name": "成城学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 53,
+      "school_name": "成城学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 54,
+      "school_name": "世田谷学園中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 54,
+      "school_name": "世田谷学園中学校",
+      "era_id": "taisho",
+      "fit_score": 0.45
+    },
+    {
+      "school_id": 54,
+      "school_name": "世田谷学園中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 54,
+      "school_name": "世田谷学園中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.61
+    },
+    {
+      "school_id": 54,
+      "school_name": "世田谷学園中学校",
+      "era_id": "heisei",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 54,
+      "school_name": "世田谷学園中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.48
+    },
+    {
+      "school_id": 54,
+      "school_name": "世田谷学園中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 54,
+      "school_name": "世田谷学園中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 54,
+      "school_name": "世田谷学園中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 55,
+      "school_name": "玉川聖学院中等部",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 55,
+      "school_name": "玉川聖学院中等部",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 55,
+      "school_name": "玉川聖学院中等部",
+      "era_id": "showa_pre",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 55,
+      "school_name": "玉川聖学院中等部",
+      "era_id": "showa_post",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 55,
+      "school_name": "玉川聖学院中等部",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 55,
+      "school_name": "玉川聖学院中等部",
+      "era_id": "reiwa",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 55,
+      "school_name": "玉川聖学院中等部",
+      "era_id": "future_2030",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 55,
+      "school_name": "玉川聖学院中等部",
+      "era_id": "future_2050",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 55,
+      "school_name": "玉川聖学院中等部",
+      "era_id": "future_2100",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 56,
+      "school_name": "品川女子学院中等部",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 56,
+      "school_name": "品川女子学院中等部",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 56,
+      "school_name": "品川女子学院中等部",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 56,
+      "school_name": "品川女子学院中等部",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 56,
+      "school_name": "品川女子学院中等部",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 56,
+      "school_name": "品川女子学院中等部",
+      "era_id": "reiwa",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 56,
+      "school_name": "品川女子学院中等部",
+      "era_id": "future_2030",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 56,
+      "school_name": "品川女子学院中等部",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 56,
+      "school_name": "品川女子学院中等部",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 57,
+      "school_name": "攻玉社中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 57,
+      "school_name": "攻玉社中学校",
+      "era_id": "taisho",
+      "fit_score": 0.52
+    },
+    {
+      "school_id": 57,
+      "school_name": "攻玉社中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 57,
+      "school_name": "攻玉社中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 57,
+      "school_name": "攻玉社中学校",
+      "era_id": "heisei",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 57,
+      "school_name": "攻玉社中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 57,
+      "school_name": "攻玉社中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 57,
+      "school_name": "攻玉社中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 57,
+      "school_name": "攻玉社中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 58,
+      "school_name": "香蘭女学校中等科",
+      "era_id": "meiji",
+      "fit_score": 0.64
+    },
+    {
+      "school_id": 58,
+      "school_name": "香蘭女学校中等科",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 58,
+      "school_name": "香蘭女学校中等科",
+      "era_id": "showa_pre",
+      "fit_score": 0.57
+    },
+    {
+      "school_id": 58,
+      "school_name": "香蘭女学校中等科",
+      "era_id": "showa_post",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 58,
+      "school_name": "香蘭女学校中等科",
+      "era_id": "heisei",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 58,
+      "school_name": "香蘭女学校中等科",
+      "era_id": "reiwa",
+      "fit_score": 0.56
+    },
+    {
+      "school_id": 58,
+      "school_name": "香蘭女学校中等科",
+      "era_id": "future_2030",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 58,
+      "school_name": "香蘭女学校中等科",
+      "era_id": "future_2050",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 58,
+      "school_name": "香蘭女学校中等科",
+      "era_id": "future_2100",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 59,
+      "school_name": "青稜中学校",
+      "era_id": "meiji",
+      "fit_score": 0.61
+    },
+    {
+      "school_id": 59,
+      "school_name": "青稜中学校",
+      "era_id": "taisho",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 59,
+      "school_name": "青稜中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 59,
+      "school_name": "青稜中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 59,
+      "school_name": "青稜中学校",
+      "era_id": "heisei",
+      "fit_score": 0.62
+    },
+    {
+      "school_id": 59,
+      "school_name": "青稜中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 59,
+      "school_name": "青稜中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 59,
+      "school_name": "青稜中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 59,
+      "school_name": "青稜中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 60,
+      "school_name": "吉祥女子中学校",
+      "era_id": "meiji",
+      "fit_score": 0.65
+    },
+    {
+      "school_id": 60,
+      "school_name": "吉祥女子中学校",
+      "era_id": "taisho",
+      "fit_score": 0.53
+    },
+    {
+      "school_id": 60,
+      "school_name": "吉祥女子中学校",
+      "era_id": "showa_pre",
+      "fit_score": 0.54
+    },
+    {
+      "school_id": 60,
+      "school_name": "吉祥女子中学校",
+      "era_id": "showa_post",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 60,
+      "school_name": "吉祥女子中学校",
+      "era_id": "heisei",
+      "fit_score": 0.6
+    },
+    {
+      "school_id": 60,
+      "school_name": "吉祥女子中学校",
+      "era_id": "reiwa",
+      "fit_score": 0.55
+    },
+    {
+      "school_id": 60,
+      "school_name": "吉祥女子中学校",
+      "era_id": "future_2030",
+      "fit_score": 0.58
+    },
+    {
+      "school_id": 60,
+      "school_name": "吉祥女子中学校",
+      "era_id": "future_2050",
+      "fit_score": 0.59
+    },
+    {
+      "school_id": 60,
+      "school_name": "吉祥女子中学校",
+      "era_id": "future_2100",
+      "fit_score": 0.57
+    }
+  ],
+  "eminent_distribution": [
+    {
+      "era": "heisei",
+      "archetype": "arch_leader",
+      "count": 70
+    },
+    {
+      "era": "heisei",
+      "archetype": "arch_explorer",
+      "count": 28
+    },
+    {
+      "era": "heisei",
+      "archetype": "arch_caregiver",
+      "count": 2
+    },
+    {
+      "era": "meiji",
+      "archetype": "arch_steady",
+      "count": 50
+    },
+    {
+      "era": "meiji",
+      "archetype": "arch_explorer",
+      "count": 42
+    },
+    {
+      "era": "meiji",
+      "archetype": "arch_caregiver",
+      "count": 4
+    },
+    {
+      "era": "meiji",
+      "archetype": "arch_social_creator",
+      "count": 2
+    },
+    {
+      "era": "meiji",
+      "archetype": "arch_creator",
+      "count": 2
+    },
+    {
+      "era": "reiwa",
+      "archetype": "arch_explorer",
+      "count": 66
+    },
+    {
+      "era": "reiwa",
+      "archetype": "arch_leader",
+      "count": 32
+    },
+    {
+      "era": "reiwa",
+      "archetype": "arch_caregiver",
+      "count": 2
+    },
+    {
+      "era": "showa_post",
+      "archetype": "arch_explorer",
+      "count": 77
+    },
+    {
+      "era": "showa_post",
+      "archetype": "arch_leader",
+      "count": 23
+    },
+    {
+      "era": "showa_pre",
+      "archetype": "arch_steady",
+      "count": 74
+    },
+    {
+      "era": "showa_pre",
+      "archetype": "arch_explorer",
+      "count": 18
+    },
+    {
+      "era": "showa_pre",
+      "archetype": "arch_caregiver",
+      "count": 6
+    },
+    {
+      "era": "showa_pre",
+      "archetype": "arch_social_creator",
+      "count": 1
+    },
+    {
+      "era": "showa_pre",
+      "archetype": "arch_mediator",
+      "count": 1
+    },
+    {
+      "era": "taisho",
+      "archetype": "arch_steady",
+      "count": 79
+    },
+    {
+      "era": "taisho",
+      "archetype": "arch_caregiver",
+      "count": 17
+    },
+    {
+      "era": "taisho",
+      "archetype": "arch_explorer",
+      "count": 4
+    }
+  ],
+  "archetype_representatives": [
+    {
+      "archetype": "arch_explorer",
+      "people": [
+        {
+          "name": "マリ・キュリー",
+          "era": "taisho",
+          "domain": "women_pioneers",
+          "big_five": "{\"O\": 71, \"C\": 62, \"E\": 50, \"A\": 50, \"N\": 50}"
+        },
+        {
+          "name": "キャサリン・エサウ",
+          "era": "showa_pre",
+          "domain": "women_pioneers",
+          "big_five": "{\"O\": 71, \"C\": 62, \"E\": 50, \"A\": 50, \"N\": 50}"
+        },
+        {
+          "name": "堤義明",
+          "era": "showa_post",
+          "domain": "business",
+          "big_five": "{\"O\": 60.19477434679335, \"C\": 56.246143705285036, \"E\": 68.83165054430226, \"A\": 68.2018868686, \"N\": 95.53270619659898}"
+        },
+        {
+          "name": "高月清",
+          "era": "showa_post",
+          "domain": "science_tech",
+          "big_five": "{\"O\": 60.19477434679335, \"C\": 55.22396884488319, \"E\": 79.05069345548219, \"A\": 68.2018868686, \"N\": 92.49274861878453}"
+        },
+        {
+          "name": "アニータ・ロディック",
+          "era": "showa_post",
+          "domain": "women_pioneers",
+          "big_five": "{\"O\": 60.19477434679335, \"C\": 59.396689271011326, \"E\": 73.80876664568149, \"A\": 68.2018868686, \"N\": 94.48252434135688}"
+        }
+      ]
+    },
+    {
+      "archetype": "arch_creator",
+      "people": [
+        {
+          "name": "高橋由一",
+          "era": "meiji",
+          "domain": "culture_arts",
+          "big_five": "{\"O\": 63, \"C\": 41, \"E\": 50, \"A\": 50, \"N\": 58}"
+        },
+        {
+          "name": "上野彦馬",
+          "era": "meiji",
+          "domain": "culture_arts",
+          "big_five": "{\"O\": 63, \"C\": 41, \"E\": 50, \"A\": 50, \"N\": 58}"
+        }
+      ]
+    },
+    {
+      "archetype": "arch_leader",
+      "people": [
+        {
+          "name": "熊野純彦",
+          "era": "showa_post",
+          "domain": "religion_thought",
+          "big_five": "{\"O\": 46.031244907784696, \"C\": 65.36601643872838, \"E\": 79.05069345548219, \"A\": 68.2018868686, \"N\": 92.49274861878453}"
+        },
+        {
+          "name": "本多健一",
+          "era": "showa_post",
+          "domain": "science_tech",
+          "big_five": "{\"O\": 53.26434401524203, \"C\": 65.36601643872838, \"E\": 79.05069345548219, \"A\": 68.2018868686, \"N\": 92.49274861878453}"
+        },
+        {
+          "name": "横澤彪",
+          "era": "showa_post",
+          "domain": "media_journalism",
+          "big_five": "{\"O\": 46.031244907784696, \"C\": 65.36601643872838, \"E\": 75.23699720045467, \"A\": 64.38819061357248, \"N\": 92.49274861878453}"
+        },
+        {
+          "name": "永井均",
+          "era": "showa_post",
+          "domain": "religion_thought",
+          "big_five": "{\"O\": 46.031244907784696, \"C\": 65.36601643872838, \"E\": 79.05069345548219, \"A\": 68.2018868686, \"N\": 92.49274861878453}"
+        },
+        {
+          "name": "柳田充弘",
+          "era": "showa_post",
+          "domain": "science_tech",
+          "big_five": "{\"O\": 53.26434401524203, \"C\": 65.36601643872838, \"E\": 69.98312914124581, \"A\": 68.2018868686, \"N\": 92.49274861878453}"
+        }
+      ]
+    },
+    {
+      "archetype": "arch_caregiver",
+      "people": [
+        {
+          "name": "片渕須直",
+          "era": "heisei",
+          "domain": "culture_arts",
+          "big_five": "{\"O\": 53.26434401524203, \"C\": 58.961699597538015, \"E\": 79.05069345548219, \"A\": 68.2018868686, \"N\": 92.49274861878453}"
+        },
+        {
+          "name": "水島昇",
+          "era": "heisei",
+          "domain": "science",
+          "big_five": "{\"O\": 53.26434401524203, \"C\": 58.961699597538015, \"E\": 79.05069345548219, \"A\": 68.2018868686, \"N\": 92.49274861878453}"
+        },
+        {
+          "name": "利根川進",
+          "era": "reiwa",
+          "domain": "science",
+          "big_five": "{\"O\": 46.031244907784696, \"C\": 55.22396884488319, \"E\": 79.05069345548219, \"A\": 68.2018868686, \"N\": 92.49274861878453}"
+        },
+        {
+          "name": "野依良治",
+          "era": "reiwa",
+          "domain": "science",
+          "big_five": "{\"O\": 46.031244907784696, \"C\": 55.22396884488319, \"E\": 79.05069345548219, \"A\": 68.2018868686, \"N\": 92.49274861878453}"
+        },
+        {
+          "name": "ジェーン・アダムズ",
+          "era": "meiji",
+          "domain": "women_pioneers",
+          "big_five": "{\"O\": 50, \"C\": 58, \"E\": 67, \"A\": 65, \"N\": 41}"
+        }
+      ]
+    },
+    {
+      "archetype": "arch_warrior",
+      "people": []
+    },
+    {
+      "archetype": "arch_mediator",
+      "people": [
+        {
+          "name": "河合栄治郎",
+          "era": "showa_pre",
+          "domain": "social_movement",
+          "big_five": "{\"O\": 71, \"C\": 58, \"E\": 50, \"A\": 64, \"N\": 41}"
+        }
+      ]
+    },
+    {
+      "archetype": "arch_craftsman",
+      "people": []
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "people": []
+    },
+    {
+      "archetype": "arch_social_creator",
+      "people": [
+        {
+          "name": "ソフィア・ジェックス＝ブレイク",
+          "era": "meiji",
+          "domain": "women_pioneers",
+          "big_five": "{\"O\": 71, \"C\": 58, \"E\": 69, \"A\": 50, \"N\": 41}"
+        },
+        {
+          "name": "メアリー・パットナム・ジャコビ",
+          "era": "meiji",
+          "domain": "women_pioneers",
+          "big_five": "{\"O\": 71, \"C\": 58, \"E\": 69, \"A\": 50, \"N\": 41}"
+        },
+        {
+          "name": "レイラ・デンマーク",
+          "era": "showa_pre",
+          "domain": "women_pioneers",
+          "big_five": "{\"O\": 71, \"C\": 58, \"E\": 69, \"A\": 50, \"N\": 41}"
+        }
+      ]
+    },
+    {
+      "archetype": "arch_steady",
+      "people": [
+        {
+          "name": "ヴィルヘルム2世",
+          "era": "meiji",
+          "domain": "politics",
+          "big_five": "{\"O\": 26, \"C\": 50, \"E\": 0, \"A\": 0, \"N\": 50}"
+        },
+        {
+          "name": "ニコライ2世",
+          "era": "meiji",
+          "domain": "politics",
+          "big_five": "{\"O\": 26, \"C\": 0, \"E\": 26, \"A\": 26, \"N\": 50}"
+        },
+        {
+          "name": "ヘルムート・フォン・モルトケ",
+          "era": "meiji",
+          "domain": "military",
+          "big_five": "{\"O\": 26, \"C\": 0, \"E\": 26, \"A\": 26, \"N\": 100}"
+        },
+        {
+          "name": "アルフレート・フォン・ティルピッツ",
+          "era": "meiji",
+          "domain": "military",
+          "big_five": "{\"O\": 5, \"C\": 50, \"E\": 26, \"A\": 26, \"N\": 50}"
+        },
+        {
+          "name": "ジョン・フレンチ",
+          "era": "meiji",
+          "domain": "military",
+          "big_five": "{\"O\": 26, \"C\": 50, \"E\": 0, \"A\": 0, \"N\": 50}"
+        }
+      ]
+    }
+  ],
+  "scenario_fits": [
+    {
+      "archetype": "arch_caregiver",
+      "era": "future_2030",
+      "scenario": "agi",
+      "fit_score": 0.5,
+      "rationale": "arch_caregiver において agi シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "era": "future_2030",
+      "scenario": "baseline",
+      "fit_score": 0.4,
+      "rationale": "arch_caregiver において baseline シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "era": "future_2030",
+      "scenario": "ssp1",
+      "fit_score": 0.45,
+      "rationale": "arch_caregiver において ssp1 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "era": "future_2030",
+      "scenario": "ssp3",
+      "fit_score": 0.35,
+      "rationale": "arch_caregiver において ssp3 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "era": "future_2050",
+      "scenario": "agi",
+      "fit_score": 0.7,
+      "rationale": "arch_caregiver において agi シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "era": "future_2050",
+      "scenario": "baseline",
+      "fit_score": 0.85,
+      "rationale": "arch_caregiver において baseline シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "era": "future_2050",
+      "scenario": "ssp1",
+      "fit_score": 0.88,
+      "rationale": "arch_caregiver において ssp1 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "era": "future_2050",
+      "scenario": "ssp3",
+      "fit_score": 0.8,
+      "rationale": "arch_caregiver において ssp3 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "era": "future_2100",
+      "scenario": "agi",
+      "fit_score": 0.65,
+      "rationale": "arch_caregiver において agi シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "era": "future_2100",
+      "scenario": "baseline",
+      "fit_score": 0.85,
+      "rationale": "arch_caregiver において baseline シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "era": "future_2100",
+      "scenario": "ssp1",
+      "fit_score": 0.9,
+      "rationale": "arch_caregiver において ssp1 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "era": "future_2100",
+      "scenario": "ssp3",
+      "fit_score": 0.75,
+      "rationale": "arch_caregiver において ssp3 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "era": "future_2030",
+      "scenario": "agi",
+      "fit_score": 0.68,
+      "rationale": "arch_craftsman において agi シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "era": "future_2030",
+      "scenario": "baseline",
+      "fit_score": 0.65,
+      "rationale": "arch_craftsman において baseline シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "era": "future_2030",
+      "scenario": "ssp1",
+      "fit_score": 0.7,
+      "rationale": "arch_craftsman において ssp1 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "era": "future_2030",
+      "scenario": "ssp3",
+      "fit_score": 0.6,
+      "rationale": "arch_craftsman において ssp3 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "era": "future_2050",
+      "scenario": "agi",
+      "fit_score": 0.72,
+      "rationale": "arch_craftsman において agi シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "era": "future_2050",
+      "scenario": "baseline",
+      "fit_score": 0.7,
+      "rationale": "arch_craftsman において baseline シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "era": "future_2050",
+      "scenario": "ssp1",
+      "fit_score": 0.75,
+      "rationale": "arch_craftsman において ssp1 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "era": "future_2050",
+      "scenario": "ssp3",
+      "fit_score": 0.6,
+      "rationale": "arch_craftsman において ssp3 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "era": "future_2100",
+      "scenario": "agi",
+      "fit_score": 0.72,
+      "rationale": "arch_craftsman において agi シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "era": "future_2100",
+      "scenario": "baseline",
+      "fit_score": 0.7,
+      "rationale": "arch_craftsman において baseline シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "era": "future_2100",
+      "scenario": "ssp1",
+      "fit_score": 0.75,
+      "rationale": "arch_craftsman において ssp1 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "era": "future_2100",
+      "scenario": "ssp3",
+      "fit_score": 0.6,
+      "rationale": "arch_craftsman において ssp3 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_creator",
+      "era": "future_2030",
+      "scenario": "agi",
+      "fit_score": 0.88,
+      "rationale": "arch_creator において agi シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_creator",
+      "era": "future_2030",
+      "scenario": "baseline",
+      "fit_score": 0.78,
+      "rationale": "arch_creator において baseline シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_creator",
+      "era": "future_2030",
+      "scenario": "ssp1",
+      "fit_score": 0.85,
+      "rationale": "arch_creator において ssp1 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_creator",
+      "era": "future_2030",
+      "scenario": "ssp3",
+      "fit_score": 0.7,
+      "rationale": "arch_creator において ssp3 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_creator",
+      "era": "future_2050",
+      "scenario": "agi",
+      "fit_score": 0.9,
+      "rationale": "arch_creator において agi シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_creator",
+      "era": "future_2050",
+      "scenario": "baseline",
+      "fit_score": 0.75,
+      "rationale": "arch_creator において baseline シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_creator",
+      "era": "future_2050",
+      "scenario": "ssp1",
+      "fit_score": 0.88,
+      "rationale": "arch_creator において ssp1 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_creator",
+      "era": "future_2050",
+      "scenario": "ssp3",
+      "fit_score": 0.65,
+      "rationale": "arch_creator において ssp3 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_creator",
+      "era": "future_2100",
+      "scenario": "agi",
+      "fit_score": 0.92,
+      "rationale": "arch_creator において agi シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_creator",
+      "era": "future_2100",
+      "scenario": "baseline",
+      "fit_score": 0.72,
+      "rationale": "arch_creator において baseline シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_creator",
+      "era": "future_2100",
+      "scenario": "ssp1",
+      "fit_score": 0.9,
+      "rationale": "arch_creator において ssp1 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_creator",
+      "era": "future_2100",
+      "scenario": "ssp3",
+      "fit_score": 0.6,
+      "rationale": "arch_creator において ssp3 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "era": "future_2030",
+      "scenario": "agi",
+      "fit_score": 0.9,
+      "rationale": "arch_explorer において agi シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "era": "future_2030",
+      "scenario": "baseline",
+      "fit_score": 0.85,
+      "rationale": "arch_explorer において baseline シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "era": "future_2030",
+      "scenario": "ssp1",
+      "fit_score": 0.88,
+      "rationale": "arch_explorer において ssp1 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "era": "future_2030",
+      "scenario": "ssp3",
+      "fit_score": 0.82,
+      "rationale": "arch_explorer において ssp3 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "era": "future_2050",
+      "scenario": "agi",
+      "fit_score": 0.92,
+      "rationale": "arch_explorer において agi シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "era": "future_2050",
+      "scenario": "baseline",
+      "fit_score": 0.82,
+      "rationale": "arch_explorer において baseline シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "era": "future_2050",
+      "scenario": "ssp1",
+      "fit_score": 0.9,
+      "rationale": "arch_explorer において ssp1 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "era": "future_2050",
+      "scenario": "ssp3",
+      "fit_score": 0.75,
+      "rationale": "arch_explorer において ssp3 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "era": "future_2100",
+      "scenario": "agi",
+      "fit_score": 0.95,
+      "rationale": "arch_explorer において agi シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "era": "future_2100",
+      "scenario": "baseline",
+      "fit_score": 0.8,
+      "rationale": "arch_explorer において baseline シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "era": "future_2100",
+      "scenario": "ssp1",
+      "fit_score": 0.92,
+      "rationale": "arch_explorer において ssp1 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "era": "future_2100",
+      "scenario": "ssp3",
+      "fit_score": 0.7,
+      "rationale": "arch_explorer において ssp3 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "era": "future_2030",
+      "scenario": "agi",
+      "fit_score": 0.68,
+      "rationale": "arch_introvert_thinker において agi シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "era": "future_2030",
+      "scenario": "baseline",
+      "fit_score": 0.65,
+      "rationale": "arch_introvert_thinker において baseline シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "era": "future_2030",
+      "scenario": "ssp1",
+      "fit_score": 0.7,
+      "rationale": "arch_introvert_thinker において ssp1 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "era": "future_2030",
+      "scenario": "ssp3",
+      "fit_score": 0.6,
+      "rationale": "arch_introvert_thinker において ssp3 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "era": "future_2050",
+      "scenario": "agi",
+      "fit_score": 0.72,
+      "rationale": "arch_introvert_thinker において agi シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "era": "future_2050",
+      "scenario": "baseline",
+      "fit_score": 0.7,
+      "rationale": "arch_introvert_thinker において baseline シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "era": "future_2050",
+      "scenario": "ssp1",
+      "fit_score": 0.75,
+      "rationale": "arch_introvert_thinker において ssp1 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "era": "future_2050",
+      "scenario": "ssp3",
+      "fit_score": 0.6,
+      "rationale": "arch_introvert_thinker において ssp3 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "era": "future_2100",
+      "scenario": "agi",
+      "fit_score": 0.72,
+      "rationale": "arch_introvert_thinker において agi シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "era": "future_2100",
+      "scenario": "baseline",
+      "fit_score": 0.7,
+      "rationale": "arch_introvert_thinker において baseline シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "era": "future_2100",
+      "scenario": "ssp1",
+      "fit_score": 0.75,
+      "rationale": "arch_introvert_thinker において ssp1 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "era": "future_2100",
+      "scenario": "ssp3",
+      "fit_score": 0.6,
+      "rationale": "arch_introvert_thinker において ssp3 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_leader",
+      "era": "future_2030",
+      "scenario": "agi",
+      "fit_score": 0.8,
+      "rationale": "arch_leader において agi シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_leader",
+      "era": "future_2030",
+      "scenario": "baseline",
+      "fit_score": 0.7,
+      "rationale": "arch_leader において baseline シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_leader",
+      "era": "future_2030",
+      "scenario": "ssp1",
+      "fit_score": 0.75,
+      "rationale": "arch_leader において ssp1 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_leader",
+      "era": "future_2030",
+      "scenario": "ssp3",
+      "fit_score": 0.4,
+      "rationale": "arch_leader において ssp3 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_leader",
+      "era": "future_2050",
+      "scenario": "agi",
+      "fit_score": 0.75,
+      "rationale": "arch_leader において agi シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_leader",
+      "era": "future_2050",
+      "scenario": "baseline",
+      "fit_score": 0.72,
+      "rationale": "arch_leader において baseline シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_leader",
+      "era": "future_2050",
+      "scenario": "ssp1",
+      "fit_score": 0.85,
+      "rationale": "arch_leader において ssp1 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_leader",
+      "era": "future_2050",
+      "scenario": "ssp3",
+      "fit_score": 0.5,
+      "rationale": "arch_leader において ssp3 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_leader",
+      "era": "future_2100",
+      "scenario": "agi",
+      "fit_score": 0.7,
+      "rationale": "arch_leader において agi シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_leader",
+      "era": "future_2100",
+      "scenario": "baseline",
+      "fit_score": 0.68,
+      "rationale": "arch_leader において baseline シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_leader",
+      "era": "future_2100",
+      "scenario": "ssp1",
+      "fit_score": 0.82,
+      "rationale": "arch_leader において ssp1 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_leader",
+      "era": "future_2100",
+      "scenario": "ssp3",
+      "fit_score": 0.55,
+      "rationale": "arch_leader において ssp3 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "era": "future_2030",
+      "scenario": "agi",
+      "fit_score": 0.7,
+      "rationale": "arch_mediator において agi シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "era": "future_2030",
+      "scenario": "baseline",
+      "fit_score": 0.72,
+      "rationale": "arch_mediator において baseline シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "era": "future_2030",
+      "scenario": "ssp1",
+      "fit_score": 0.8,
+      "rationale": "arch_mediator において ssp1 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "era": "future_2030",
+      "scenario": "ssp3",
+      "fit_score": 0.55,
+      "rationale": "arch_mediator において ssp3 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "era": "future_2050",
+      "scenario": "agi",
+      "fit_score": 0.75,
+      "rationale": "arch_mediator において agi シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "era": "future_2050",
+      "scenario": "baseline",
+      "fit_score": 0.78,
+      "rationale": "arch_mediator において baseline シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "era": "future_2050",
+      "scenario": "ssp1",
+      "fit_score": 0.85,
+      "rationale": "arch_mediator において ssp1 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "era": "future_2050",
+      "scenario": "ssp3",
+      "fit_score": 0.65,
+      "rationale": "arch_mediator において ssp3 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "era": "future_2100",
+      "scenario": "agi",
+      "fit_score": 0.78,
+      "rationale": "arch_mediator において agi シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "era": "future_2100",
+      "scenario": "baseline",
+      "fit_score": 0.8,
+      "rationale": "arch_mediator において baseline シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "era": "future_2100",
+      "scenario": "ssp1",
+      "fit_score": 0.88,
+      "rationale": "arch_mediator において ssp1 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "era": "future_2100",
+      "scenario": "ssp3",
+      "fit_score": 0.68,
+      "rationale": "arch_mediator において ssp3 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "era": "future_2030",
+      "scenario": "agi",
+      "fit_score": 0.68,
+      "rationale": "arch_social_creator において agi シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "era": "future_2030",
+      "scenario": "baseline",
+      "fit_score": 0.65,
+      "rationale": "arch_social_creator において baseline シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "era": "future_2030",
+      "scenario": "ssp1",
+      "fit_score": 0.7,
+      "rationale": "arch_social_creator において ssp1 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "era": "future_2030",
+      "scenario": "ssp3",
+      "fit_score": 0.6,
+      "rationale": "arch_social_creator において ssp3 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "era": "future_2050",
+      "scenario": "agi",
+      "fit_score": 0.72,
+      "rationale": "arch_social_creator において agi シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "era": "future_2050",
+      "scenario": "baseline",
+      "fit_score": 0.7,
+      "rationale": "arch_social_creator において baseline シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "era": "future_2050",
+      "scenario": "ssp1",
+      "fit_score": 0.75,
+      "rationale": "arch_social_creator において ssp1 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "era": "future_2050",
+      "scenario": "ssp3",
+      "fit_score": 0.6,
+      "rationale": "arch_social_creator において ssp3 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "era": "future_2100",
+      "scenario": "agi",
+      "fit_score": 0.72,
+      "rationale": "arch_social_creator において agi シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "era": "future_2100",
+      "scenario": "baseline",
+      "fit_score": 0.7,
+      "rationale": "arch_social_creator において baseline シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "era": "future_2100",
+      "scenario": "ssp1",
+      "fit_score": 0.75,
+      "rationale": "arch_social_creator において ssp1 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "era": "future_2100",
+      "scenario": "ssp3",
+      "fit_score": 0.6,
+      "rationale": "arch_social_creator において ssp3 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_steady",
+      "era": "future_2030",
+      "scenario": "agi",
+      "fit_score": 0.68,
+      "rationale": "arch_steady において agi シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_steady",
+      "era": "future_2030",
+      "scenario": "baseline",
+      "fit_score": 0.65,
+      "rationale": "arch_steady において baseline シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_steady",
+      "era": "future_2030",
+      "scenario": "ssp1",
+      "fit_score": 0.7,
+      "rationale": "arch_steady において ssp1 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_steady",
+      "era": "future_2030",
+      "scenario": "ssp3",
+      "fit_score": 0.6,
+      "rationale": "arch_steady において ssp3 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_steady",
+      "era": "future_2050",
+      "scenario": "agi",
+      "fit_score": 0.72,
+      "rationale": "arch_steady において agi シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_steady",
+      "era": "future_2050",
+      "scenario": "baseline",
+      "fit_score": 0.7,
+      "rationale": "arch_steady において baseline シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_steady",
+      "era": "future_2050",
+      "scenario": "ssp1",
+      "fit_score": 0.75,
+      "rationale": "arch_steady において ssp1 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_steady",
+      "era": "future_2050",
+      "scenario": "ssp3",
+      "fit_score": 0.6,
+      "rationale": "arch_steady において ssp3 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_steady",
+      "era": "future_2100",
+      "scenario": "agi",
+      "fit_score": 0.72,
+      "rationale": "arch_steady において agi シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_steady",
+      "era": "future_2100",
+      "scenario": "baseline",
+      "fit_score": 0.7,
+      "rationale": "arch_steady において baseline シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_steady",
+      "era": "future_2100",
+      "scenario": "ssp1",
+      "fit_score": 0.75,
+      "rationale": "arch_steady において ssp1 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_steady",
+      "era": "future_2100",
+      "scenario": "ssp3",
+      "fit_score": 0.6,
+      "rationale": "arch_steady において ssp3 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "era": "future_2030",
+      "scenario": "agi",
+      "fit_score": 0.55,
+      "rationale": "arch_warrior において agi シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "era": "future_2030",
+      "scenario": "baseline",
+      "fit_score": 0.65,
+      "rationale": "arch_warrior において baseline シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "era": "future_2030",
+      "scenario": "ssp1",
+      "fit_score": 0.6,
+      "rationale": "arch_warrior において ssp1 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "era": "future_2030",
+      "scenario": "ssp3",
+      "fit_score": 0.85,
+      "rationale": "arch_warrior において ssp3 シナリオにおける future_2030 への適応度。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "era": "future_2050",
+      "scenario": "agi",
+      "fit_score": 0.5,
+      "rationale": "arch_warrior において agi シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "era": "future_2050",
+      "scenario": "baseline",
+      "fit_score": 0.6,
+      "rationale": "arch_warrior において baseline シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "era": "future_2050",
+      "scenario": "ssp1",
+      "fit_score": 0.55,
+      "rationale": "arch_warrior において ssp1 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "era": "future_2050",
+      "scenario": "ssp3",
+      "fit_score": 0.8,
+      "rationale": "arch_warrior において ssp3 シナリオにおける future_2050 への適応度。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "era": "future_2100",
+      "scenario": "agi",
+      "fit_score": 0.45,
+      "rationale": "arch_warrior において agi シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "era": "future_2100",
+      "scenario": "baseline",
+      "fit_score": 0.55,
+      "rationale": "arch_warrior において baseline シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "era": "future_2100",
+      "scenario": "ssp1",
+      "fit_score": 0.5,
+      "rationale": "arch_warrior において ssp1 シナリオにおける future_2100 への適応度。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "era": "future_2100",
+      "scenario": "ssp3",
+      "fit_score": 0.75,
+      "rationale": "arch_warrior において ssp3 シナリオにおける future_2100 への適応度。"
+    }
+  ],
+  "prediction_paths": [
+    {
+      "archetype": "arch_caregiver",
+      "school": "青山学院中等部",
+      "careers": "[\"education\", \"medical\", \"social_movement\"]",
+      "outcomes": "{\"cognitive\": 0.68, \"social_emotional\": 0.81, \"values\": 0.63, \"agency\": 0.63, \"wellbeing\": 0.63, \"creativity\": 0.68, \"market\": 0.63}",
+      "conf": "{\"lower\": 0.60375, \"upper\": 0.84625}",
+      "scenarios": "{\"baseline\": 0.27, \"SSP1\": 0.253, \"SSP3\": 0.235, \"AGI\": 0.242}",
+      "rationale": "養育者型の人格特性と青山学院中等部の教育環境との中程度の適合度（スコア 0.72）に基づく予測です。青山学院中等部の教育方針は、養育者の内発的動機づけを引き出しやすい環境として評価されています。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "school": "小石川淑徳学園中学校",
+      "careers": "[\"education\", \"medical\", \"social_movement\"]",
+      "outcomes": "{\"cognitive\": 0.68, \"social_emotional\": 0.81, \"values\": 0.63, \"agency\": 0.63, \"wellbeing\": 0.63, \"creativity\": 0.68, \"market\": 0.63}",
+      "conf": "{\"lower\": 0.60375, \"upper\": 0.84625}",
+      "scenarios": "{\"baseline\": 0.27, \"SSP1\": 0.253, \"SSP3\": 0.235, \"AGI\": 0.242}",
+      "rationale": "養育者型の人格特性と小石川淑徳学園中学校の教育環境との中程度の適合度（スコア 0.72）に基づく予測です。小石川淑徳学園中学校の教育方針は、養育者の内発的動機づけを引き出しやすい環境として評価されています。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_creator",
+      "school": "開智日本橋学園中学校",
+      "careers": "[\"culture_arts\", \"media\", \"design\"]",
+      "outcomes": "{\"cognitive\": 0.68, \"social_emotional\": 0.68, \"values\": 0.63, \"agency\": 0.63, \"wellbeing\": 0.63, \"creativity\": 0.81, \"market\": 0.63}",
+      "conf": "{\"lower\": 0.60375, \"upper\": 0.84625}",
+      "scenarios": "{\"baseline\": 0.255, \"SSP1\": 0.295, \"SSP3\": 0.222, \"AGI\": 0.228}",
+      "rationale": "創造者型の人格特性と開智日本橋学園中学校の教育環境との中程度の適合度（スコア 0.72）に基づく予測です。開智日本橋学園中学校の教育方針は、創造者の内発的動機づけを引き出しやすい環境として評価されています。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_creator",
+      "school": "芝国際中学校",
+      "careers": "[\"culture_arts\", \"media\", \"design\"]",
+      "outcomes": "{\"cognitive\": 0.68, \"social_emotional\": 0.68, \"values\": 0.63, \"agency\": 0.63, \"wellbeing\": 0.63, \"creativity\": 0.81, \"market\": 0.63}",
+      "conf": "{\"lower\": 0.60375, \"upper\": 0.84625}",
+      "scenarios": "{\"baseline\": 0.255, \"SSP1\": 0.295, \"SSP3\": 0.222, \"AGI\": 0.228}",
+      "rationale": "創造者型の人格特性と芝国際中学校の教育環境との中程度の適合度（スコア 0.72）に基づく予測です。芝国際中学校の教育方針は、創造者の内発的動機づけを引き出しやすい環境として評価されています。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "school": "成城学園中学校",
+      "careers": "[\"science_tech\", \"education\", \"culture_arts_research\"]",
+      "outcomes": "{\"cognitive\": 0.91, \"social_emotional\": 0.78, \"values\": 0.73, \"agency\": 0.73, \"wellbeing\": 0.73, \"creativity\": 0.78, \"market\": 0.73}",
+      "conf": "{\"lower\": 0.7474999999999999, \"upper\": 0.9525}",
+      "scenarios": "{\"baseline\": 0.255, \"SSP1\": 0.293, \"SSP3\": 0.223, \"AGI\": 0.229}",
+      "rationale": "探究者型の人格特性と成城学園中学校の教育環境との高い適合度（スコア 0.85）に基づく予測です。成城学園中学校の教育方針は、探究者の内発的動機づけを引き出しやすい環境として評価されています。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "school": "開成中学校",
+      "careers": "[\"science_tech\", \"education\", \"culture_arts_research\"]",
+      "outcomes": "{\"cognitive\": 0.87, \"social_emotional\": 0.74, \"values\": 0.69, \"agency\": 0.69, \"wellbeing\": 0.69, \"creativity\": 0.74, \"market\": 0.69}",
+      "conf": "{\"lower\": 0.6900000000000001, \"upper\": 0.91}",
+      "scenarios": "{\"baseline\": 0.255, \"SSP1\": 0.294, \"SSP3\": 0.223, \"AGI\": 0.229}",
+      "rationale": "探究者型の人格特性と開成中学校の教育環境との高い適合度（スコア 0.80）に基づく予測です。開成中学校の教育方針は、探究者の内発的動機づけを引き出しやすい環境として評価されています。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "school": "麻布中学校",
+      "careers": "[\"science_tech\", \"education\", \"culture_arts_research\"]",
+      "outcomes": "{\"cognitive\": 0.87, \"social_emotional\": 0.74, \"values\": 0.69, \"agency\": 0.69, \"wellbeing\": 0.69, \"creativity\": 0.74, \"market\": 0.69}",
+      "conf": "{\"lower\": 0.6900000000000001, \"upper\": 0.91}",
+      "scenarios": "{\"baseline\": 0.255, \"SSP1\": 0.294, \"SSP3\": 0.223, \"AGI\": 0.229}",
+      "rationale": "探究者型の人格特性と麻布中学校の教育環境との高い適合度（スコア 0.80）に基づく予測です。麻布中学校の教育方針は、探究者の内発的動機づけを引き出しやすい環境として評価されています。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "school": "雙葉中学校",
+      "careers": "[\"education\", \"medical\", \"social_movement\"]",
+      "outcomes": "{\"cognitive\": 0.62, \"social_emotional\": 0.75, \"values\": 0.57, \"agency\": 0.57, \"wellbeing\": 0.57, \"creativity\": 0.62, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.271, \"SSP1\": 0.253, \"SSP3\": 0.235, \"AGI\": 0.242}",
+      "rationale": "養育者型の人格特性と雙葉中学校の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "school": "洛南高等学校附属中学校",
+      "careers": "[\"education\", \"medical\", \"social_movement\"]",
+      "outcomes": "{\"cognitive\": 0.62, \"social_emotional\": 0.75, \"values\": 0.57, \"agency\": 0.57, \"wellbeing\": 0.57, \"creativity\": 0.62, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.271, \"SSP1\": 0.253, \"SSP3\": 0.235, \"AGI\": 0.242}",
+      "rationale": "養育者型の人格特性と洛南高等学校附属中学校の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_caregiver",
+      "school": "神戸女学院中学部",
+      "careers": "[\"education\", \"medical\", \"social_movement\"]",
+      "outcomes": "{\"cognitive\": 0.62, \"social_emotional\": 0.75, \"values\": 0.57, \"agency\": 0.57, \"wellbeing\": 0.57, \"creativity\": 0.62, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.271, \"SSP1\": 0.253, \"SSP3\": 0.235, \"AGI\": 0.242}",
+      "rationale": "養育者型の人格特性と神戸女学院中学部の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "school": "開成中学校",
+      "careers": "[\"craft\", \"science_tech_specialist\", \"traditional_arts\"]",
+      "outcomes": "{\"cognitive\": 0.62, \"social_emotional\": 0.62, \"values\": 0.57, \"agency\": 0.57, \"wellbeing\": 0.57, \"creativity\": 0.75, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.271, \"SSP1\": 0.253, \"SSP3\": 0.235, \"AGI\": 0.242}",
+      "rationale": "職人型型の人格特性と開成中学校の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "school": "麻布中学校",
+      "careers": "[\"craft\", \"science_tech_specialist\", \"traditional_arts\"]",
+      "outcomes": "{\"cognitive\": 0.62, \"social_emotional\": 0.62, \"values\": 0.57, \"agency\": 0.57, \"wellbeing\": 0.57, \"creativity\": 0.75, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.271, \"SSP1\": 0.253, \"SSP3\": 0.235, \"AGI\": 0.242}",
+      "rationale": "職人型型の人格特性と麻布中学校の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_craftsman",
+      "school": "桜蔭中学校",
+      "careers": "[\"craft\", \"science_tech_specialist\", \"traditional_arts\"]",
+      "outcomes": "{\"cognitive\": 0.62, \"social_emotional\": 0.62, \"values\": 0.57, \"agency\": 0.57, \"wellbeing\": 0.57, \"creativity\": 0.75, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.271, \"SSP1\": 0.253, \"SSP3\": 0.235, \"AGI\": 0.242}",
+      "rationale": "職人型型の人格特性と桜蔭中学校の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_creator",
+      "school": "麻布中学校",
+      "careers": "[\"culture_arts\", \"media\", \"design\"]",
+      "outcomes": "{\"cognitive\": 0.62, \"social_emotional\": 0.62, \"values\": 0.57, \"agency\": 0.57, \"wellbeing\": 0.57, \"creativity\": 0.75, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.255, \"SSP1\": 0.296, \"SSP3\": 0.221, \"AGI\": 0.228}",
+      "rationale": "創造者型の人格特性と麻布中学校の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_creator",
+      "school": "雙葉中学校",
+      "careers": "[\"culture_arts\", \"media\", \"design\"]",
+      "outcomes": "{\"cognitive\": 0.56, \"social_emotional\": 0.56, \"values\": 0.51, \"agency\": 0.51, \"wellbeing\": 0.51, \"creativity\": 0.69, \"market\": 0.51}",
+      "conf": "{\"lower\": 0.43124999999999997, \"upper\": 0.71875}",
+      "scenarios": "{\"baseline\": 0.255, \"SSP1\": 0.298, \"SSP3\": 0.22, \"AGI\": 0.227}",
+      "rationale": "創造者型の人格特性と雙葉中学校の教育環境との初期的な適合度（スコア 0.57）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_creator",
+      "school": "渋谷教育学園幕張中学校",
+      "careers": "[\"culture_arts\", \"media\", \"design\"]",
+      "outcomes": "{\"cognitive\": 0.56, \"social_emotional\": 0.56, \"values\": 0.51, \"agency\": 0.51, \"wellbeing\": 0.51, \"creativity\": 0.69, \"market\": 0.51}",
+      "conf": "{\"lower\": 0.43124999999999997, \"upper\": 0.71875}",
+      "scenarios": "{\"baseline\": 0.255, \"SSP1\": 0.298, \"SSP3\": 0.22, \"AGI\": 0.227}",
+      "rationale": "創造者型の人格特性と渋谷教育学園幕張中学校の教育環境との初期的な適合度（スコア 0.57）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "school": "成城学園中学校",
+      "careers": "[\"science_tech\", \"education\", \"culture_arts_research\"]",
+      "outcomes": "{\"cognitive\": 0.91, \"social_emotional\": 0.78, \"values\": 0.73, \"agency\": 0.73, \"wellbeing\": 0.73, \"creativity\": 0.78, \"market\": 0.73}",
+      "conf": "{\"lower\": 0.7474999999999999, \"upper\": 0.9525}",
+      "scenarios": "{\"baseline\": 0.255, \"SSP1\": 0.293, \"SSP3\": 0.223, \"AGI\": 0.229}",
+      "rationale": "探究者型の人格特性と成城学園中学校の教育環境との高い適合度（スコア 0.85）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "school": "開成中学校",
+      "careers": "[\"science_tech\", \"education\", \"culture_arts_research\"]",
+      "outcomes": "{\"cognitive\": 0.87, \"social_emotional\": 0.74, \"values\": 0.69, \"agency\": 0.69, \"wellbeing\": 0.69, \"creativity\": 0.74, \"market\": 0.69}",
+      "conf": "{\"lower\": 0.6900000000000001, \"upper\": 0.91}",
+      "scenarios": "{\"baseline\": 0.255, \"SSP1\": 0.294, \"SSP3\": 0.223, \"AGI\": 0.229}",
+      "rationale": "探究者型の人格特性と開成中学校の教育環境との高い適合度（スコア 0.80）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_explorer",
+      "school": "麻布中学校",
+      "careers": "[\"science_tech\", \"education\", \"culture_arts_research\"]",
+      "outcomes": "{\"cognitive\": 0.87, \"social_emotional\": 0.74, \"values\": 0.69, \"agency\": 0.69, \"wellbeing\": 0.69, \"creativity\": 0.74, \"market\": 0.69}",
+      "conf": "{\"lower\": 0.6900000000000001, \"upper\": 0.91}",
+      "scenarios": "{\"baseline\": 0.255, \"SSP1\": 0.294, \"SSP3\": 0.223, \"AGI\": 0.229}",
+      "rationale": "探究者型の人格特性と麻布中学校の教育環境との高い適合度（スコア 0.80）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "school": "麻布中学校",
+      "careers": "[\"science_tech_theoretical\", \"philosophy\", \"writing\"]",
+      "outcomes": "{\"cognitive\": 0.75, \"social_emotional\": 0.62, \"values\": 0.57, \"agency\": 0.57, \"wellbeing\": 0.57, \"creativity\": 0.62, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.255, \"SSP1\": 0.296, \"SSP3\": 0.221, \"AGI\": 0.228}",
+      "rationale": "内省思索者型の人格特性と麻布中学校の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "school": "開智日本橋学園中学校",
+      "careers": "[\"science_tech_theoretical\", \"philosophy\", \"writing\"]",
+      "outcomes": "{\"cognitive\": 0.75, \"social_emotional\": 0.62, \"values\": 0.57, \"agency\": 0.57, \"wellbeing\": 0.57, \"creativity\": 0.62, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.255, \"SSP1\": 0.296, \"SSP3\": 0.221, \"AGI\": 0.228}",
+      "rationale": "内省思索者型の人格特性と開智日本橋学園中学校の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_introvert_thinker",
+      "school": "芝国際中学校",
+      "careers": "[\"science_tech_theoretical\", \"philosophy\", \"writing\"]",
+      "outcomes": "{\"cognitive\": 0.75, \"social_emotional\": 0.62, \"values\": 0.57, \"agency\": 0.57, \"wellbeing\": 0.57, \"creativity\": 0.62, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.255, \"SSP1\": 0.296, \"SSP3\": 0.221, \"AGI\": 0.228}",
+      "rationale": "内省思索者型の人格特性と芝国際中学校の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_leader",
+      "school": "雙葉中学校",
+      "careers": "[\"business\", \"politics\", \"organizational_management\"]",
+      "outcomes": "{\"cognitive\": 0.62, \"social_emotional\": 0.62, \"values\": 0.57, \"agency\": 0.75, \"wellbeing\": 0.57, \"creativity\": 0.62, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.254, \"SSP1\": 0.237, \"SSP3\": 0.282, \"AGI\": 0.227}",
+      "rationale": "リーダー型型の人格特性と雙葉中学校の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_leader",
+      "school": "洛南高等学校附属中学校",
+      "careers": "[\"business\", \"politics\", \"organizational_management\"]",
+      "outcomes": "{\"cognitive\": 0.62, \"social_emotional\": 0.62, \"values\": 0.57, \"agency\": 0.75, \"wellbeing\": 0.57, \"creativity\": 0.62, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.254, \"SSP1\": 0.237, \"SSP3\": 0.282, \"AGI\": 0.227}",
+      "rationale": "リーダー型型の人格特性と洛南高等学校附属中学校の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_leader",
+      "school": "神戸女学院中学部",
+      "careers": "[\"business\", \"politics\", \"organizational_management\"]",
+      "outcomes": "{\"cognitive\": 0.62, \"social_emotional\": 0.62, \"values\": 0.57, \"agency\": 0.75, \"wellbeing\": 0.57, \"creativity\": 0.62, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.254, \"SSP1\": 0.237, \"SSP3\": 0.282, \"AGI\": 0.227}",
+      "rationale": "リーダー型型の人格特性と神戸女学院中学部の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "school": "開成中学校",
+      "careers": "[\"social_movement\", \"politics_diplomacy\", \"education\"]",
+      "outcomes": "{\"cognitive\": 0.5, \"social_emotional\": 0.63, \"values\": 0.45, \"agency\": 0.45, \"wellbeing\": 0.45, \"creativity\": 0.5, \"market\": 0.45}",
+      "conf": "{\"lower\": 0.345, \"upper\": 0.655}",
+      "scenarios": "{\"baseline\": 0.25, \"SSP1\": 0.232, \"SSP3\": 0.214, \"AGI\": 0.304}",
+      "rationale": "調停者型の人格特性と開成中学校の教育環境との初期的な適合度（スコア 0.50）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "school": "麻布中学校",
+      "careers": "[\"social_movement\", \"politics_diplomacy\", \"education\"]",
+      "outcomes": "{\"cognitive\": 0.5, \"social_emotional\": 0.63, \"values\": 0.45, \"agency\": 0.45, \"wellbeing\": 0.45, \"creativity\": 0.5, \"market\": 0.45}",
+      "conf": "{\"lower\": 0.345, \"upper\": 0.655}",
+      "scenarios": "{\"baseline\": 0.25, \"SSP1\": 0.232, \"SSP3\": 0.214, \"AGI\": 0.304}",
+      "rationale": "調停者型の人格特性と麻布中学校の教育環境との初期的な適合度（スコア 0.50）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_mediator",
+      "school": "桜蔭中学校",
+      "careers": "[\"social_movement\", \"politics_diplomacy\", \"education\"]",
+      "outcomes": "{\"cognitive\": 0.5, \"social_emotional\": 0.63, \"values\": 0.45, \"agency\": 0.45, \"wellbeing\": 0.45, \"creativity\": 0.5, \"market\": 0.45}",
+      "conf": "{\"lower\": 0.345, \"upper\": 0.655}",
+      "scenarios": "{\"baseline\": 0.25, \"SSP1\": 0.232, \"SSP3\": 0.214, \"AGI\": 0.304}",
+      "rationale": "調停者型の人格特性と桜蔭中学校の教育環境との初期的な適合度（スコア 0.50）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "school": "開成中学校",
+      "careers": "[\"media\", \"culture_arts\", \"business_creative\"]",
+      "outcomes": "{\"cognitive\": 0.5, \"social_emotional\": 0.5, \"values\": 0.45, \"agency\": 0.45, \"wellbeing\": 0.45, \"creativity\": 0.63, \"market\": 0.45}",
+      "conf": "{\"lower\": 0.345, \"upper\": 0.655}",
+      "scenarios": "{\"baseline\": 0.25, \"SSP1\": 0.232, \"SSP3\": 0.214, \"AGI\": 0.304}",
+      "rationale": "社交創造者型の人格特性と開成中学校の教育環境との初期的な適合度（スコア 0.50）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "school": "麻布中学校",
+      "careers": "[\"media\", \"culture_arts\", \"business_creative\"]",
+      "outcomes": "{\"cognitive\": 0.5, \"social_emotional\": 0.5, \"values\": 0.45, \"agency\": 0.45, \"wellbeing\": 0.45, \"creativity\": 0.63, \"market\": 0.45}",
+      "conf": "{\"lower\": 0.345, \"upper\": 0.655}",
+      "scenarios": "{\"baseline\": 0.25, \"SSP1\": 0.232, \"SSP3\": 0.214, \"AGI\": 0.304}",
+      "rationale": "社交創造者型の人格特性と麻布中学校の教育環境との初期的な適合度（スコア 0.50）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_social_creator",
+      "school": "桜蔭中学校",
+      "careers": "[\"media\", \"culture_arts\", \"business_creative\"]",
+      "outcomes": "{\"cognitive\": 0.5, \"social_emotional\": 0.5, \"values\": 0.45, \"agency\": 0.45, \"wellbeing\": 0.45, \"creativity\": 0.63, \"market\": 0.45}",
+      "conf": "{\"lower\": 0.345, \"upper\": 0.655}",
+      "scenarios": "{\"baseline\": 0.25, \"SSP1\": 0.232, \"SSP3\": 0.214, \"AGI\": 0.304}",
+      "rationale": "社交創造者型の人格特性と桜蔭中学校の教育環境との初期的な適合度（スコア 0.50）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_steady",
+      "school": "開成中学校",
+      "careers": "[\"business_admin\", \"public_service\", \"education\"]",
+      "outcomes": "{\"cognitive\": 0.5, \"social_emotional\": 0.5, \"values\": 0.45, \"agency\": 0.45, \"wellbeing\": 0.63, \"creativity\": 0.5, \"market\": 0.45}",
+      "conf": "{\"lower\": 0.345, \"upper\": 0.655}",
+      "scenarios": "{\"baseline\": 0.272, \"SSP1\": 0.253, \"SSP3\": 0.233, \"AGI\": 0.241}",
+      "rationale": "堅実型型の人格特性と開成中学校の教育環境との初期的な適合度（スコア 0.50）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_steady",
+      "school": "桜蔭中学校",
+      "careers": "[\"business_admin\", \"public_service\", \"education\"]",
+      "outcomes": "{\"cognitive\": 0.5, \"social_emotional\": 0.5, \"values\": 0.45, \"agency\": 0.45, \"wellbeing\": 0.63, \"creativity\": 0.5, \"market\": 0.45}",
+      "conf": "{\"lower\": 0.345, \"upper\": 0.655}",
+      "scenarios": "{\"baseline\": 0.272, \"SSP1\": 0.253, \"SSP3\": 0.233, \"AGI\": 0.241}",
+      "rationale": "堅実型型の人格特性と桜蔭中学校の教育環境との初期的な適合度（スコア 0.50）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_steady",
+      "school": "雙葉中学校",
+      "careers": "[\"business_admin\", \"public_service\", \"education\"]",
+      "outcomes": "{\"cognitive\": 0.5, \"social_emotional\": 0.5, \"values\": 0.45, \"agency\": 0.45, \"wellbeing\": 0.63, \"creativity\": 0.5, \"market\": 0.45}",
+      "conf": "{\"lower\": 0.345, \"upper\": 0.655}",
+      "scenarios": "{\"baseline\": 0.272, \"SSP1\": 0.253, \"SSP3\": 0.233, \"AGI\": 0.241}",
+      "rationale": "堅実型型の人格特性と雙葉中学校の教育環境との初期的な適合度（スコア 0.50）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "school": "雙葉中学校",
+      "careers": "[\"business_entrepreneur\", \"sports\", \"craft\"]",
+      "outcomes": "{\"cognitive\": 0.62, \"social_emotional\": 0.62, \"values\": 0.57, \"agency\": 0.75, \"wellbeing\": 0.57, \"creativity\": 0.62, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.254, \"SSP1\": 0.237, \"SSP3\": 0.282, \"AGI\": 0.227}",
+      "rationale": "挑戦者型の人格特性と雙葉中学校の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "school": "神戸女学院中学部",
+      "careers": "[\"business_entrepreneur\", \"sports\", \"craft\"]",
+      "outcomes": "{\"cognitive\": 0.62, \"social_emotional\": 0.62, \"values\": 0.57, \"agency\": 0.75, \"wellbeing\": 0.57, \"creativity\": 0.62, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.254, \"SSP1\": 0.237, \"SSP3\": 0.282, \"AGI\": 0.227}",
+      "rationale": "挑戦者型の人格特性と神戸女学院中学部の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    },
+    {
+      "archetype": "arch_warrior",
+      "school": "暁星中学校",
+      "careers": "[\"business_entrepreneur\", \"sports\", \"craft\"]",
+      "outcomes": "{\"cognitive\": 0.62, \"social_emotional\": 0.62, \"values\": 0.57, \"agency\": 0.75, \"wellbeing\": 0.57, \"creativity\": 0.62, \"market\": 0.57}",
+      "conf": "{\"lower\": 0.5175000000000001, \"upper\": 0.7825}",
+      "scenarios": "{\"baseline\": 0.254, \"SSP1\": 0.237, \"SSP3\": 0.282, \"AGI\": 0.227}",
+      "rationale": "挑戦者型の人格特性と暁星中学校の教育環境との初期的な適合度（スコア 0.65）に基づく予測です。この学校での学習経験を通じて、活躍する確率が相対的に高いと推定されます。ただし本予測は参考情報であり、子どもの選択肢を制限するものではありません。"
+    }
+  ]
+}

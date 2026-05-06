@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PST-DB | 人格-学校-活躍経路 統合予測DB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/textbook.css">
+</head>
+<body>
+<div class="reading-progress" id="readingProgress"></div>
+<header class="top-bar">
+  <div class="top-bar-brand"><span>pst-db</span> — 人格-学校-活躍経路 統合予測DB</div>
+  <div class="top-bar-actions">
+    <a href="dashboards/index.html" class="back-link">ダッシュボード</a>
+    <a href="reports/synthesis_report.html" class="back-link">レポート</a>
+    <a href="https://yuyanishimura0312.github.io/miratuku-news-v2/databases.html" class="back-link">databases</a>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">DARK</button>
+  </div>
+</header>
+
+<div class="book-layout">
+<nav class="toc-sidebar">
+  <div class="toc-label">目次</div>
+  <ol class="toc-list">
+    <li><a href="#overview"><span class="toc-num">01</span> プロジェクト概要</a></li>
+    <li><a href="#stats"><span class="toc-num">02</span> 規模と内訳</a></li>
+    <li><a href="#deliverables"><span class="toc-num">03</span> 主要成果物</a></li>
+    <li><a href="#structure"><span class="toc-num">04</span> 5層構造</a></li>
+    <li><a href="#frameworks"><span class="toc-num">05</span> 採用理論枠組み</a></li>
+    <li><a href="#related"><span class="toc-num">06</span> 関連DB</a></li>
+  </ol>
+</nav>
+
+<main class="book-main">
+<header class="book-header">
+  <div class="book-db-tags">
+    <span class="db-tag primary">PST: Persona-School-Trajectory</span>
+    <span class="db-tag">v1.0</span>
+    <span class="db-tag">補助DB</span>
+  </div>
+  <h1 class="book-title">人格-学校-活躍経路 統合予測DB</h1>
+  <p class="book-subtitle">JPMS（551校）× era-talents（12,958人）× フォーサイトの横断統合 — 子どもの人格→適合学校→活躍経路の予測モデル</p>
+  <div class="book-meta">
+    <span class="book-author">PST-DB</span>
+    <span class="book-date">2026-05-06</span>
+  </div>
+  <div class="book-metrics">
+    <span class="metric-item"><strong>2,035</strong> レコード</span>
+    <span class="metric-item"><strong>10</strong> アーキタイプ</span>
+    <span class="metric-item"><strong>60</strong> 学校</span>
+    <span class="metric-item"><strong>9</strong> 時代</span>
+    <span class="metric-item"><strong>600</strong> 偉人プロファイル</span>
+  </div>
+</header>
+
+<section id="overview" class="chapter-section">
+<div class="chapter-number-label">Chapter 01</div>
+<h2 class="chapter-title">プロジェクト概要</h2>
+
+<div class="epigraph">
+子どもの人格特性は、適合的な学校教育環境を持ち、その環境を通じて発達する能力次元が、時代の能力地形と相互作用することで、特定の活躍経路に至る蓋然性を持つ。歴史上の偉人はその経路上の具体的事例である。ただし時代性の差異により、偉人パターンを直接適用することはできず、現代・未来の能力地形に翻訳する必要がある。
+<span class="attribution">— 本DBの中核命題</span>
+</div>
+
+<p>PST-DB（Persona-School-Trajectory Integrated DB）は、JPMS-DB（私立学校DB551校・36,943件関係者の声）と era-talents-db（活躍人材12,958人・9時代×19能力次元）、フォーサイト関連DBを横断統合し、入学前の子どもの人格モデルから適合学校、活躍経路、歴史上の偉人パターンとの関連付けまでを一連の予測モデルとして構築した補助データベースである。</p>
+
+<p>本DBは Big Five-J + Holland Career Codes + 自己決定理論 + Adlerian心理学を統合した10アーキタイプ（探究者・創造者・リーダー型・養育者・挑戦者・調停者・職人型・内省思索者・社交創造者・堅実型）を中核に据え、各アーキタイプが各学校・各時代・各未来シナリオとどのように適合するかを構造化している。重要なのは、本DBが「序列付け」を絶対に行わず、すべて「相性・適合」のフレームで構築されている点である。</p>
+</section>
+
+<section id="stats" class="chapter-section">
+<div class="chapter-number-label">Chapter 02</div>
+<h2 class="chapter-title">規模と内訳</h2>
+
+<div class="stat-grid">
+  <div class="stat-card"><div class="label">総レコード</div><div class="value">2,035</div><div class="desc">9層統合</div></div>
+  <div class="stat-card"><div class="label">学校</div><div class="value">60</div><div class="desc">jpms 551校サンプル</div></div>
+  <div class="stat-card"><div class="label">アーキタイプ</div><div class="value">10</div><div class="desc">Big Five閾値</div></div>
+  <div class="stat-card"><div class="label">学校×時代適合</div><div class="value">540</div><div class="desc">9時代</div></div>
+  <div class="stat-card"><div class="label">学校×人格適合</div><div class="value">600</div><div class="desc">10類型×60校</div></div>
+  <div class="stat-card"><div class="label">活躍経路予測</div><div class="value">37</div><div class="desc">確率分布+シナリオ</div></div>
+  <div class="stat-card"><div class="label">偉人プロファイル</div><div class="value">600</div><div class="desc">6時代×100人</div></div>
+  <div class="stat-card"><div class="label">未来シナリオ適合</div><div class="value">120</div><div class="desc">10類型×3未来×4シナリオ</div></div>
+</div>
+
+<h3 class="section-heading">アーキタイプ分布（jpms 10類型を準拠）</h3>
+<table>
+<thead><tr><th>類型</th><th>Big Five閾値</th><th>Holland</th><th>典型キャリア</th></tr></thead>
+<tbody>
+<tr><td>arch_explorer 探究者</td><td>O&gt;75, C&gt;60</td><td>I,A</td><td>研究者・学者</td></tr>
+<tr><td>arch_creator 創造者</td><td>O&gt;80, N&gt;55</td><td>A,I</td><td>芸術家・作家</td></tr>
+<tr><td>arch_leader リーダー型</td><td>E&gt;70, C&gt;65, A&lt;60</td><td>E,S</td><td>経営者・政治家</td></tr>
+<tr><td>arch_caregiver 養育者</td><td>A&gt;75, E&gt;55</td><td>S,A</td><td>教師・医療・NPO</td></tr>
+<tr><td>arch_warrior 挑戦者</td><td>E&gt;70, C&gt;70, N&lt;40</td><td>E,R</td><td>アスリート・起業家</td></tr>
+<tr><td>arch_mediator 調停者</td><td>A&gt;75, O&gt;65</td><td>S,E</td><td>外交官・コミュニティリーダー</td></tr>
+<tr><td>arch_craftsman 職人型</td><td>C&gt;80, O 40-65</td><td>R,C</td><td>技術者・職人</td></tr>
+<tr><td>arch_introvert_thinker 内省思索者</td><td>E&lt;40, O&gt;70, N&gt;55</td><td>I,A</td><td>哲学者・研究者</td></tr>
+<tr><td>arch_social_creator 社交創造者</td><td>E&gt;70, O&gt;75</td><td>A,E</td><td>クリエイター・プロデューサー</td></tr>
+<tr><td>arch_steady 堅実型</td><td>C&gt;70, A&gt;65, N&lt;45</td><td>C,S</td><td>専門職・公務員</td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="deliverables" class="chapter-section">
+<div class="chapter-number-label">Chapter 03</div>
+<h2 class="chapter-title">主要成果物</h2>
+
+<div class="card-grid">
+<a href="dashboards/index.html"><div class="card">
+<h3>統合ダッシュボード</h3>
+<div class="desc">アーキタイプ10類型・学校×時代適合・学校×人格適合・活躍経路予測・偉人プロファイル・未来シナリオ適合の7タブ統合ビュー</div>
+</div></a>
+<a href="reports/synthesis_report.html"><div class="card">
+<h3>統合レポート</h3>
+<div class="desc">4タスク（学校×時代/学校×人格/予測/偉人パターン）の総合分析と教育・採用・育成への含意</div>
+</div></a>
+<a href="research/R1_personality_models.md"><div class="card">
+<h3>先行研究レポート（5本）</h3>
+<div class="desc">Big Five・Holland・自己決定理論・Person-Environment Fit・偉人プロファイリング・フォーサイト連携・予測モデル設計の理論的基盤</div>
+</div></a>
+<a href="https://github.com/yuyanishimura0312/persona-school-trajectory-db" target="_blank"><div class="card">
+<h3>GitHub Repository</h3>
+<div class="desc">スキーマ・データ・スクリプト・先行研究レポートの全体</div>
+</div></a>
+</div>
+</section>
+
+<section id="structure" class="chapter-section">
+<div class="chapter-number-label">Chapter 04</div>
+<h2 class="chapter-title">5層構造</h2>
+
+<h3 class="section-heading">L1：子どもの人格</h3>
+<p>Big Five-J（開放性・誠実性・外向性・協調性・神経症傾向の5因子、BFI-2-J で測定）に Growth Mindset・Grit・SRQ（自己決定理論）を加えた8次元。jpms person_archetype 10類型を準拠して、Big Five閾値による類型化を行う。子ども期（8〜12歳）の測定可能性と長期安定性のバランスを意識した設計である。</p>
+
+<h3 class="section-heading">L2：適合学校</h3>
+<p>jpms schools_v2 の551校から60校をサンプリングし、school_culture_score の5次元（規律・競争・自由度・協調・学問厳密性）を取得。各学校の文化プロファイルを構造化し、アーキタイプとの適合度を計算する。jpms LCA k=8 学校類型 × 10アーキタイプ = 80セルのマッチング行列を生成する。</p>
+
+<h3 class="section-heading">L3：活躍経路</h3>
+<p>各アーキタイプ × 適合学校TOP3 の組み合わせで、想定される活躍経路（career_domains）と7次元成果スコア（cognitive/social_emotional/values/agency/wellbeing/creativity/market）を予測する。各予測には95%信頼区間とシナリオ分岐（baseline/SSP1/SSP3/AGI）を併記し、決定論的予測を回避している。</p>
+
+<h3 class="section-heading">L4：偉人パターン</h3>
+<p>era-talents-db 12,958人から各時代100人（合計600人）を抽出し、achiever_capabilities の19能力次元から Big Five を推定（z-score正規化）、Holland Codes をドメインから推定し、10アーキタイプに分類する。estimation_method='capability_mapping_inferred' として、死者の人格推定の限界を明示する。</p>
+
+<h3 class="section-heading">L5：時代適合</h3>
+<p>10アーキタイプ × 6時代ペア = 60件の翻訳係数を計算し、明治の偉人パターンを直接令和に投影することの誤りを補正する。さらに10アーキタイプ × 3未来時代 × 4シナリオ = 120件の未来シナリオ適合スコアを生成し、複数の可能な未来における各人格類型の相対的適合性を提示する。</p>
+</section>
+
+<section id="frameworks" class="chapter-section">
+<div class="chapter-number-label">Chapter 05</div>
+<h2 class="chapter-title">採用理論枠組み</h2>
+
+<p>本DBは5名のClaude専門研究者による先行研究レポートを基盤として構築されている。各レポートは独立した PDF/Markdown 形式で参照可能である。</p>
+
+<table>
+<thead><tr><th>レポート</th><th>担当領域</th><th>主要文献</th></tr></thead>
+<tbody>
+<tr><td>R1 心理学的人格モデル</td><td>Big Five・Holland・自己決定理論・Adlerian・Historiometry</td><td>Costa &amp; McCrae, Holland, Deci &amp; Ryan, Simonton</td></tr>
+<tr><td>R2 教育心理学・進路選択</td><td>Person-Environment Fit・Stretch Fit・Stage-Environment Fit</td><td>Lewin, Kristof-Brown, Eccles &amp; Roeser, Krumboltz</td></tr>
+<tr><td>R3 偉人プロファイラー</td><td>能力次元→Big Five推定式・テキスト分析・クラスタリング</td><td>Cox, Simonton, Rubenzer &amp; Faschingbauer</td></tr>
+<tr><td>R4 フォーサイト連携</td><td>2030/2050/2100の能力地形 × 人格類型の適合</td><td>WEF, OECD, IPCC SSPs, MacAskill, Bostrom</td></tr>
+<tr><td>R5 数理モデル設計</td><td>マハラノビス距離・GMM・ベイジアンネット・確率モデル</td><td>Kristof-Brown, Subotnik, Csikszentmihalyi</td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="related" class="chapter-section">
+<div class="chapter-number-label">Chapter 06</div>
+<h2 class="chapter-title">関連DB</h2>
+
+<div class="card-grid">
+<a href="https://yuyanishimura0312.github.io/jpms-db/v2/" target="_blank"><div class="card">
+<h3>JPMS-DB（私立学校DB）</h3>
+<div class="desc">551校・36,943件関係者の声・5層スキーマ。本DBの学校層基盤</div>
+</div></a>
+<a href="https://yuyanishimura0312.github.io/era-talents-db/" target="_blank"><div class="card">
+<h3>era-talents-db（時代別活躍人材DB）</h3>
+<div class="desc">12,958人物・9時代×19能力次元。本DBの偉人プロファイル基盤</div>
+</div></a>
+<a href="https://yuyanishimura0312.github.io/miratuku-news-v2/databases.html" target="_blank"><div class="card">
+<h3>miratuku-news-v2 統合DB</h3>
+<div class="desc">37+DB・15.2M+レコード。本DBは補助DB登録</div>
+</div></a>
+</div>
+
+<div class="book-footer">
+PST-DB v1.0 ・ 2026-05-06<br>
+Copyright © Yuya Nishimura / NPO法人ミラツク
+</div>
+</section>
+
+</main>
+</div>
+
+<script src="css/textbook-init.js"></script>
+</body>
+</html>

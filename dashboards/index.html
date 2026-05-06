@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PST-DB ダッシュボード | 人格-学校-活躍経路 統合予測DB</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/textbook.css">
+<style>
+.dashboard-layout { max-width: 1280px; margin: 0 auto; padding: 40px 32px 100px; }
+.matrix-grid { display: grid; gap: 8px; margin: 20px 0; }
+.matrix-cell { padding: 12px; border: 1px solid var(--border); background: var(--card); }
+.matrix-cell .archetype { font-family: var(--font); font-size: 0.78rem; font-weight: 700; color: var(--accent-warm); margin-bottom: 6px; }
+.matrix-cell .school { font-family: var(--font-serif); font-size: 0.92rem; margin: 3px 0; }
+.matrix-cell .score { font-family: var(--font); font-size: 0.7rem; color: var(--text-muted); }
+.fit-bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; margin-top: 4px; }
+.fit-bar-fill { height: 100%; background: var(--accent-warm); }
+.archetype-card { background: var(--card); border: 1px solid var(--border); padding: 18px 20px; margin-bottom: 12px; }
+.archetype-card h3 { font-family: var(--font-serif); font-size: 1.05rem; margin-bottom: 6px; }
+.archetype-card .desc { font-family: var(--font); font-size: 0.78rem; color: var(--text-secondary); margin-bottom: 10px; }
+.archetype-card .threshold { font-family: "SF Mono", monospace; font-size: 0.7rem; color: var(--text-muted); }
+.heatmap-school-era { width: 100%; border-collapse: collapse; font-size: 0.7rem; font-family: var(--font); }
+.heatmap-school-era th { background: var(--surface); padding: 6px 4px; border: 1px solid var(--border-light); font-weight: 600; }
+.heatmap-school-era td { padding: 6px 4px; border: 1px solid var(--border-light); text-align: center; }
+.scenario-grid { display: grid; grid-template-columns: 200px repeat(4, 1fr); gap: 4px; margin: 12px 0; }
+.scenario-grid > div { padding: 6px 8px; font-family: var(--font); font-size: 0.72rem; }
+.scenario-grid .header { font-weight: 700; background: var(--surface); }
+.scenario-grid .sc-cell { text-align: center; }
+.score-low { background: rgba(204,20,0,0.1); }
+.score-mid { background: rgba(204,20,0,0.3); color: white; }
+.score-high { background: rgba(204,20,0,0.6); color: white; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="reading-progress" id="readingProgress"></div>
+<header class="top-bar">
+  <div class="top-bar-brand"><span>pst-db</span> — 人格-学校-活躍経路 統合予測DB</div>
+  <div class="top-bar-actions">
+    <a href="../index.html" class="back-link">&#8592; トップ</a>
+    <a href="../reports/synthesis_report.html" class="back-link">レポート</a>
+    <a href="https://yuyanishimura0312.github.io/miratuku-news-v2/databases.html" class="back-link">databases</a>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">DARK</button>
+  </div>
+</header>
+
+<div class="dashboard-layout">
+
+<header class="book-header">
+  <div class="book-db-tags">
+    <span class="db-tag primary">PST: Persona-School-Trajectory</span>
+    <span class="db-tag">v1.0</span>
+    <span class="db-tag">補助DB</span>
+  </div>
+  <h1 class="book-title">人格-学校-活躍経路 統合予測DB</h1>
+  <p class="book-subtitle">JPMS（551校）× era-talents（12,958人）× フォーサイトを横断統合し、子どもの人格→適合学校→活躍経路を予測する補助データベース</p>
+  <div class="book-meta">
+    <span class="book-author">PST-DB v1.0</span>
+    <span class="book-date">2026-05-06</span>
+  </div>
+  <div class="book-metrics">
+    <span class="metric-item"><strong id="m-total">2,035</strong> レコード</span>
+    <span class="metric-item"><strong>10</strong> アーキタイプ</span>
+    <span class="metric-item"><strong>60</strong> 学校</span>
+    <span class="metric-item"><strong>9</strong> 時代</span>
+    <span class="metric-item"><strong>600</strong> 偉人プロファイル</span>
+  </div>
+</header>
+
+<nav class="tabs">
+  <button class="active" data-section="overview">概要</button>
+  <button data-section="archetypes">アーキタイプ10類型</button>
+  <button data-section="school-era">学校×時代適合</button>
+  <button data-section="school-archetype">学校×人格適合</button>
+  <button data-section="prediction">活躍経路予測</button>
+  <button data-section="eminent">偉人プロファイル</button>
+  <button data-section="scenario">未来シナリオ適合</button>
+</nav>
+
+<section id="overview" class="section active">
+<h3 class="section-heading">中核命題</h3>
+<div class="callout">
+<div class="callout-label">本DBの位置づけ</div>
+<p>子どもの人格特性は、(a) 適合的な学校教育環境を持ち、(b) その環境を通じて発達する能力次元が、(c) 時代の能力地形（過去〜現在〜未来）と相互作用することで、(d) 特定の活躍経路に至る蓋然性を持つ。歴史上の偉人は、その経路上に位置する具体的な事例である。ただし、時代性の差異により、偉人パターンを直接適用することはできず、現代・未来の能力地形に翻訳する必要がある。</p>
+</div>
+
+<h3 class="section-heading">5層構造</h3>
+<table>
+<thead><tr><th>層</th><th>内容</th><th>データ件数</th></tr></thead>
+<tbody>
+<tr><td>L1 子どもの人格</td><td>Big Five-J + Holland + Growth Mindset + Adlerian統合</td><td>10類型 × 8次元</td></tr>
+<tr><td>L2 適合学校</td><td>jpms 551校から60校サンプル × 文化プロファイル</td><td>60校 × 540 era_fit + 600 archetype_fit</td></tr>
+<tr><td>L3 活躍経路</td><td>archetype × top fit学校 → 7次元成果予測</td><td>37件（信頼区間+シナリオ分岐）</td></tr>
+<tr><td>L4 偉人パターン</td><td>era-talents 12,958人から600人をBig Five推定+類型化</td><td>600プロファイル（6時代×100人）</td></tr>
+<tr><td>L5 時代適合</td><td>過去⇄未来の翻訳係数 + シナリオ別適合</td><td>60翻訳 + 120シナリオ適合</td></tr>
+</tbody>
+</table>
+
+<h3 class="section-heading">倫理ガードレール</h3>
+<div class="insight-box">
+<div class="insight-box-label">本DBの利用原則</div>
+<p>(1)「序列付け」絶対禁止、すべて「相性・適合」フレーム。(2) 決定論回避：「この子はこの学校に行くべき」ではなく「この傾向に合う環境はこういう特徴」。(3) 時代性の自覚：偉人を直接モデルにしない、「翻訳」が必要。(4) データの限界：jpms Layer 2 個人特性は実データ未充実、era-talents は記録バイアスあり。(5) 未来予測の不確実性：シナリオ分岐を併記、単一予測を避ける。</p>
+</div>
+</section>
+
+<section id="archetypes" class="section"><h3 class="section-heading">10アーキタイプ類型</h3><div id="archetype-cards"></div></section>
+
+<section id="school-era" class="section">
+<h3 class="section-heading">学校×時代の適合度マップ</h3>
+<p>各学校が、明治〜令和+2030/2050/2100の各時代の能力像とどの程度適合するか。色濃度はfit_scoreを示す（0.30-0.85の範囲）。</p>
+<div id="heatmap-display" style="overflow-x: auto;"></div>
+</section>
+
+<section id="school-archetype" class="section">
+<h3 class="section-heading">学校×アーキタイプの適合度</h3>
+<p>各アーキタイプ（人格類型）に対するTOP5適合校。direct_fit (≥0.7) / stretch_fit (0.5-0.69) / poor_fit (&lt;0.5)で分類。</p>
+<div id="archetype-schools"></div>
+</section>
+
+<section id="prediction" class="section">
+<h3 class="section-heading">活躍経路予測</h3>
+<p>各アーキタイプ × 適合学校の組み合わせで、想定される活躍経路（career_domains）と7次元成果スコア、信頼区間、シナリオ分岐を提示。<strong>これは確率的予測であり強制ではない</strong>。</p>
+<div id="prediction-cards"></div>
+</section>
+
+<section id="eminent" class="section">
+<h3 class="section-heading">偉人アーキタイプ別代表者</h3>
+<p>era-talents-db 12,958人から各時代100人を抽出（合計600人）し、Big Five推定+10類型分類。各アーキタイプの代表5人を提示。</p>
+<div id="eminent-archetypes"></div>
+</section>
+
+<section id="scenario" class="section">
+<h3 class="section-heading">未来シナリオ × アーキタイプ適合</h3>
+<p>2030/2050/2100の各シナリオ（baseline/SSP1/SSP3/AGI）における各アーキタイプの相対適合度。「未来は単一でない、シナリオ分岐の中での相対的な適合性」を表現。</p>
+<div id="scenario-display"></div>
+</section>
+
+<div class="book-footer">
+PST-DB v1.0 ・ 2026-05-06 ・
+<a href="https://github.com/yuyanishimura0312/persona-school-trajectory-db" target="_blank">GitHub</a> ・
+関連: <a href="https://yuyanishimura0312.github.io/jpms-db/v2/" target="_blank">JPMS-DB</a> ・
+<a href="https://yuyanishimura0312.github.io/era-talents-db/" target="_blank">era-talents-db</a> ・
+<a href="https://yuyanishimura0312.github.io/miratuku-news-v2/databases.html" target="_blank">統合DB</a>
+</div>
+
+</div>
+
+<script src="../css/textbook-init.js"></script>
+<script>
+const ERA_LABELS = {meiji:"明治",taisho:"大正",showa_pre:"昭和前期",showa_post:"昭和後期",heisei:"平成",reiwa:"令和",future_2030:"2030s",future_2050:"2050s",future_2100:"2100s"};
+
+let DATA;
+fetch("data.json").then(r=>r.json()).then(d=>{ DATA=d; renderAll(); });
+
+function renderAll() {
+  document.getElementById("m-total").textContent = DATA.meta.total_records.toLocaleString();
+  setupTabs();
+  renderArchetypes();
+  renderSchoolEra();
+  renderArchetypeSchools();
+  renderPrediction();
+  renderEminent();
+  renderScenario();
+}
+
+function setupTabs() {
+  document.querySelectorAll("nav.tabs button").forEach(btn=>{
+    btn.addEventListener("click",()=>{
+      document.querySelectorAll("nav.tabs button").forEach(b=>b.classList.remove("active"));
+      document.querySelectorAll(".section").forEach(s=>s.classList.remove("active"));
+      btn.classList.add("active");
+      document.getElementById(btn.dataset.section).classList.add("active");
+    });
+  });
+}
+
+function renderArchetypes() {
+  document.getElementById("archetype-cards").innerHTML = DATA.archetypes.map(a=>`
+    <div class="archetype-card">
+      <h3>${a.name_ja} <small style="color:var(--text-muted); font-weight: normal;">(${a.name_en})</small></h3>
+      <div class="threshold">Big Five: ${a.big_five_thresholds} ・ Holland: ${a.holland_codes}</div>
+      <div class="desc">${a.description}</div>
+    </div>
+  `).join("");
+}
+
+function renderSchoolEra() {
+  const eras = ["meiji","taisho","showa_pre","showa_post","heisei","reiwa","future_2030","future_2050","future_2100"];
+  const lookup = {};
+  DATA.era_school_heatmap.forEach(c=>{ lookup[`${c.school_id}|${c.era_id}`]=c.fit_score; });
+  const schoolMap = {};
+  DATA.schools_sample.forEach(s=>{ schoolMap[s.id]=s.school_name; });
+  let html = '<table class="heatmap-school-era"><thead><tr><th style="text-align:left;">学校名</th>';
+  eras.forEach(e=>html+=`<th>${ERA_LABELS[e]}</th>`);
+  html += '</tr></thead><tbody>';
+  DATA.schools_sample.slice(0,40).forEach(s=>{
+    html += `<tr><td style="text-align:left; padding-left:8px;">${s.school_name}</td>`;
+    eras.forEach(e=>{
+      const sc = lookup[`${s.id}|${e}`];
+      let cls = "";
+      if (sc !== undefined) {
+        if (sc >= 0.65) cls = "score-high";
+        else if (sc >= 0.55) cls = "score-mid";
+        else cls = "score-low";
+      }
+      html += `<td class="${cls}">${sc !== undefined ? sc.toFixed(2) : "-"}</td>`;
+    });
+    html += '</tr>';
+  });
+  html += '</tbody></table>';
+  document.getElementById("heatmap-display").innerHTML = html;
+}
+
+function renderArchetypeSchools() {
+  document.getElementById("archetype-schools").innerHTML = DATA.archetype_top_schools.map(a=>`
+    <div class="callout">
+      <div class="callout-title">${a.archetype_name} (${a.archetype_id})</div>
+      ${a.top_schools.map(s=>`
+        <div style="margin: 6px 0;">
+          <div style="display: flex; justify-content: space-between; font-family: var(--font); font-size: 0.85rem;">
+            <span><strong>${s.school_name}</strong> <small style="color:var(--text-muted);">(${s.prefecture||""})</small></span>
+            <span style="color: var(--accent-warm); font-weight: 700;">${s.fit_score.toFixed(2)} ${s.fit_type}</span>
+          </div>
+          <div class="fit-bar"><div class="fit-bar-fill" style="width: ${s.fit_score*100}%"></div></div>
+          <div style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 4px;">${s.rationale||""}</div>
+        </div>
+      `).join("")}
+    </div>
+  `).join("");
+}
+
+function renderPrediction() {
+  document.getElementById("prediction-cards").innerHTML = DATA.prediction_paths.map(p=>{
+    let outcomes = {}, conf = {}, scenarios = {};
+    try { outcomes = JSON.parse(p.outcomes||"{}"); } catch(e){}
+    try { conf = JSON.parse(p.conf||"{}"); } catch(e){}
+    try { scenarios = JSON.parse(p.scenarios||"{}"); } catch(e){}
+    const outcomeBars = Object.entries(outcomes).map(([k,v])=>`
+      <div style="display:flex; align-items:center; gap:8px; font-size:0.72rem; margin: 2px 0;">
+        <span style="width:140px; color: var(--text-muted);">${k}</span>
+        <div class="fit-bar" style="flex:1;"><div class="fit-bar-fill" style="width:${(v*100).toFixed(0)}%;"></div></div>
+        <span style="width:36px; text-align:right;">${(v*100).toFixed(0)}</span>
+      </div>`).join("");
+    return `<div class="callout">
+      <div class="callout-title">${p.archetype} × ${p.school}</div>
+      <p style="font-size: 0.82rem;">${p.rationale||""}</p>
+      <div style="margin-top:10px; font-size:0.72rem; color: var(--text-muted);">想定キャリア: ${(()=>{ try{return JSON.parse(p.careers).join(", ");}catch(e){return p.careers;}})()}</div>
+      <div style="margin-top: 8px;">${outcomeBars}</div>
+      <div style="margin-top: 8px; font-size: 0.72rem; color: var(--text-muted);">
+        信頼区間: ${conf.lower?.toFixed(2)||"-"} 〜 ${conf.upper?.toFixed(2)||"-"} ・
+        シナリオ別: ${Object.entries(scenarios).map(([k,v])=>`${k}=${(v*100).toFixed(0)}%`).join(" / ")}
+      </div>
+    </div>`;
+  }).join("");
+}
+
+function renderEminent() {
+  document.getElementById("eminent-archetypes").innerHTML = DATA.archetype_representatives.map(a=>{
+    const arch = DATA.archetypes.find(x=>x.id===a.archetype);
+    return `<div class="callout">
+      <div class="callout-title">${arch?arch.name_ja:a.archetype}</div>
+      <table style="font-size:0.78rem; margin-top:6px;">
+        <thead><tr><th>名前</th><th>時代</th><th>分野</th><th>Big Five推定</th></tr></thead>
+        <tbody>
+        ${a.people.map(p=>{
+          let bf={};try{bf=JSON.parse(p.big_five||"{}");}catch(e){}
+          const bfStr = Object.entries(bf).map(([k,v])=>`${k}:${typeof v==="number"?v.toFixed(0):v}`).join(" ");
+          return `<tr><td>${p.name}</td><td>${ERA_LABELS[p.era]||p.era}</td><td>${p.domain||""}</td><td><small>${bfStr}</small></td></tr>`;
+        }).join("")}
+        </tbody>
+      </table>
+    </div>`;
+  }).join("");
+}
+
+function renderScenario() {
+  // Group: archetype × era → scenario fits
+  const byArchEra = {};
+  DATA.scenario_fits.forEach(s=>{
+    const k = `${s.archetype}|${s.era}`;
+    if (!byArchEra[k]) byArchEra[k] = {};
+    byArchEra[k][s.scenario] = {score: s.fit_score, rationale: s.rationale};
+  });
+  const archetypes = [...new Set(DATA.scenario_fits.map(s=>s.archetype))];
+  const eras = ["future_2030","future_2050","future_2100"];
+  const scenarios = ["baseline","SSP1","SSP3","AGI"];
+  let html = "";
+  archetypes.forEach(arch=>{
+    const archMeta = DATA.archetypes.find(x=>x.id===arch);
+    html += `<div style="margin-top: 24px;"><h4 class="subsection-heading">${archMeta?archMeta.name_ja:arch} (${arch})</h4>`;
+    html += '<div class="scenario-grid"><div class="header">時代＼シナリオ</div>';
+    scenarios.forEach(sc=>html+=`<div class="header sc-cell">${sc}</div>`);
+    eras.forEach(era=>{
+      html += `<div class="header" style="background: var(--surface);">${ERA_LABELS[era]}</div>`;
+      scenarios.forEach(sc=>{
+        const v = byArchEra[`${arch}|${era}`]?.[sc]?.score;
+        let cls="";
+        if (v !== undefined){
+          if (v>=0.7) cls="score-high"; else if (v>=0.5) cls="score-mid"; else cls="score-low";
+        }
+        html += `<div class="sc-cell ${cls}">${v !== undefined ? v.toFixed(2) : "-"}</div>`;
+      });
+    });
+    html += '</div></div>';
+  });
+  document.getElementById("scenario-display").innerHTML = html;
+}
+</script>
+</body>
+</html>

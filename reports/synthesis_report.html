@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PST-DB 統合レポート | 人格-学校-活躍経路の予測モデル</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/textbook.css">
+</head>
+<body>
+<div class="reading-progress" id="readingProgress"></div>
+<header class="top-bar">
+  <div class="top-bar-brand"><span>pst-db</span> — 統合レポート</div>
+  <div class="top-bar-actions">
+    <a href="../index.html" class="back-link">&#8592; トップ</a>
+    <a href="../dashboards/index.html" class="back-link">ダッシュボード</a>
+    <button class="theme-toggle" id="themeToggle" onclick="toggleTheme()">DARK</button>
+  </div>
+</header>
+
+<div class="book-layout">
+<nav class="toc-sidebar">
+  <div class="toc-label">目次</div>
+  <ol class="toc-list">
+    <li><a href="#intro"><span class="toc-num">序</span> 中核命題と方法</a></li>
+    <li><a href="#task1"><span class="toc-num">1</span> 学校×時代適合検証</a></li>
+    <li><a href="#task2"><span class="toc-num">2</span> 学校×人格モデル</a></li>
+    <li><a href="#task3"><span class="toc-num">3</span> 予測モデル</a></li>
+    <li><a href="#task4"><span class="toc-num">4</span> 偉人パターン×時代翻訳</a></li>
+    <li><a href="#implications"><span class="toc-num">5</span> 教育・採用・育成への含意</a></li>
+    <li><a href="#limits"><span class="toc-num">6</span> 限界と倫理</a></li>
+  </ol>
+</nav>
+
+<main class="book-main">
+<header class="book-header">
+  <div class="book-db-tags">
+    <span class="db-tag primary">PST: Persona-School-Trajectory</span>
+    <span class="db-tag">統合レポート v1.0</span>
+  </div>
+  <h1 class="book-title">人格-学校-活躍経路の予測モデル — 統合レポート</h1>
+  <p class="book-subtitle">JPMS × era-talents × フォーサイトの横断統合から見えた4つの知見</p>
+  <div class="book-meta">
+    <span class="book-author">PST-DB v1.0</span>
+    <span class="book-date">2026-05-06</span>
+  </div>
+</header>
+
+<section id="intro" class="chapter-section">
+<div class="chapter-number-label">序章</div>
+<h2 class="chapter-title">中核命題と方法</h2>
+
+<div class="epigraph">
+本DBは決定論的な「この子はこの学校に行くべき」というモデルではなく、「この子の傾向に合う環境はこういう特徴を持つ」という確率的・条件付き知識を提供する。子ども・親・教師の主体的判断を支援する道具として設計されている。
+<span class="attribution">— PST-DB 設計原則</span>
+</div>
+
+<p>本レポートは、PST-DB（Persona-School-Trajectory Integrated DB）が4つの分析タスクで生成した知見を統合的に提示するものである。第一に、学校教育方針が時代の人物像とどう適合するかの実証分析。第二に、学校文化と人格類型の心理学的適合モデル。第三に、入学前の子どもの人格から適合学校・活躍経路を予測する数理モデル。第四に、歴史上の偉人パターンと現代・未来の人格類型を時代差を補正しながら関連付ける枠組み。これらを統合することで、子どもの教育選択を「序列付け」ではなく「相性の活用」として再定義する。</p>
+
+<p>方法論としては、jpms_v2 の551校から60校をサンプリングし、school_culture_score の5次元（規律・競争・自由度・協調・学問厳密性）と era-talents-db の19能力次元・9時代区分・590未来予測を統合した。Big Five-J + Holland Career Codes + Growth Mindset + 自己決定理論を統合した10アーキタイプを核に、心理学的フレーム（R1）、Person-Environment Fit理論（R2）、Historiometry（R3）、フォーサイト適合（R4）、数理予測モデル（R5）の先行研究を踏まえている。</p>
+
+<p>合計2,035レコード（学校×時代適合540件、学校×人格適合600件、活躍経路予測37件、偉人プロファイル600件、時代翻訳60件、未来シナリオ適合120件）を構造化した。本レポートは各タスクの主要発見を順に提示する。</p>
+</section>
+
+<section id="task1" class="chapter-section">
+<div class="chapter-number-label">タスク1</div>
+<h2 class="chapter-title">学校×時代適合検証</h2>
+
+<p>60校 × 9時代 = 540件の適合度を計算した結果、明治期は「規律高+学問厳密性高」の校が高適合（雙葉・暁星・白百合 fit 0.67、開成 0.63）であり、大正期は「創造性+自由度」を要求するため標本校の62%が低適合（大正の自由教育運動を反映する校が乏しい構造）であった。昭和前期は「共同体性+多様性のバランス」、昭和後期は「協調性+構造の両立」が主軸となり、いずれも私立中学校の伝統的価値観と概ね合致した。</p>
+
+<p>平成期に入ると「対人スキル+レジリエンス重視」が要請され、麻布（fit 0.72）が最高適合となり、自律性と協調性の両立を実現した校が浮上した。令和期は「AI協働+異分野統合志向」が必要となり、開智日本橋・芝国際（fit 0.67）など国際性・創造性の高い新興校が高評価を得た。重要なのは、令和に高適合の校が必ずしも明治・昭和の伝統校と一致しないという発見である。</p>
+
+<p>2030年代では「AI協働+探究学習基盤」が必要で、麻布・開智日本橋・芝国際（0.63-0.65）。2050年代は「気候適応+多元価値+持続可能性教育」が中心となり、青山学院（0.70）が最高値となった。これは多様性・国際性が長期的価値を持つことを示唆する。2100年代は「ポストヒューマン倫理+メタ認知重視」で、青山学院・小石川淑徳・香蘭女学校（0.65-0.68）が想定される。</p>
+
+<div class="callout">
+<div class="callout-label">主要発見</div>
+<p>学校別の時代適合性は時代を通じて固定的ではなく、時代の能力地形変化に応じて再評価される。明治期に高適合だった伝統校が令和・未来期に必ずしも高評価ではなく、戦後創立の校・国際校・自由教育校が未来適合性で再評価される傾向がある。教育選択においては「現在の評価」と「将来の能力地形での適合性」を区別する視座が必要である。</p>
+</div>
+</section>
+
+<section id="task2" class="chapter-section">
+<div class="chapter-number-label">タスク2</div>
+<h2 class="chapter-title">学校×人格モデル（心理学的）</h2>
+
+<p>10アーキタイプ × 60校 = 600件の心理学的適合度分析の結果、direct_fit（fit≥0.7）は33件（5.5%）、stretch_fit（0.5-0.69）は563件（93.8%）、poor_fit（&lt;0.5）は4件（0.7%）であった。直接的な完全適合は稀である一方、ストレッチ的適合（基本的適合+発達的チャレンジ）が大半を占める。これは Vygotsky の最近接発達領域（ZPD）理論と Csikszentmihalyi のフロー理論の知見と整合的である。</p>
+
+<p>arch_explorer（探究者）は29校で direct_fit を達成し、最も学校選択の自由度が高いアーキタイプとなった。開成・麻布・灘・成城学園（fit 0.80-0.85）など、自律性・知的強度の高い校で最適化される。一方、arch_creator（創造者）と arch_caregiver（養育者）は direct_fit が2-4校に限定され、メンター支援による個別的な発達機会設計が重要となる。</p>
+
+<p>arch_introvert_thinker（内省思索者）は学問厳密性高+静寂環境の校で direct_fit となるが、競争性過多・大規模校では poor_fit となるため、選択の慎重さが要求される。arch_warrior（挑戦者）は競争性高+構造度中の校で direct_fit、自由度過多では stretch_fit に変わる傾向があり、構造的足場の重要性が示された。</p>
+
+<p>本タスクの核心は、心理学的適合度の数値が「序列」ではなく「相性のマップ」であるという点である。fit_score 0.55-0.65 の stretch_fit ゾーンにある多くの組み合わせは、適切な支援があれば成長可能性が高く、むしろ過度な direct_fit よりも発達的な意義が大きい場合がある。</p>
+</section>
+
+<section id="task3" class="chapter-section">
+<div class="chapter-number-label">タスク3</div>
+<h2 class="chapter-title">予測モデル — 入学前の子ども→学校→活躍経路</h2>
+
+<p>10アーキタイプ × 適合校TOP3-4 の組み合わせで37件の活躍経路予測を生成した。各予測は7次元成果スコア（cognitive/social_emotional/values/agency/wellbeing/creativity/market）と95%信頼区間、4シナリオ（baseline/SSP1/SSP3/AGI）の確率分布を含む。</p>
+
+<p>探究者型 × 成城学園は最高適合度（0.85）で、認知能力 0.91、信頼区間 [0.747, 0.953]、SSP1シナリオで29.3%の活躍確率を示した。創造者型 × 開智日本橋学園は中程度適合（0.72）で創造性次元が 0.81、SSP1優位。養育者型 × 青山学院は社会感情能力 0.81、baseline優位。内省思索者型 × 麻布は認知能力 0.75、SSP1優位。堅実型 × 開成は適合度低（0.50）で wellbeing 0.63、幅広い信頼区間でバイアス警告を伴う。</p>
+
+<p>R5 数理モデル（マハラノビス距離+GMM+ベイジアンネットワーク）に基づき、各予測には「決定論的回避」「複数シナリオ併記」「不確実性定量化」「理由の透明性」「警告文挿入」の5原則が組み込まれている。rationale_ja には必ず「これは予測であり強制ではない、決定は本人・保護者・教育者で」と明記されている。</p>
+
+<div class="insight-box">
+<div class="insight-box-label">予測モデルの設計思想</div>
+<p>本モデルは「最適解」を提示するのではなく、「複数の可能な未来における相対的な適合性」を確率的に提示する。子どもが将来何になるかは予測できないが、複数の可能性に備えて「どんな柔軟性や基礎的能力を育成するか」を考える材料を提供する。これが本DBの教育・採用・育成への核心的貢献である。</p>
+</div>
+</section>
+
+<section id="task4" class="chapter-section">
+<div class="chapter-number-label">タスク4</div>
+<h2 class="chapter-title">偉人パターン×時代性配慮×フォーサイト統合</h2>
+
+<p>era-talents-db 12,958人から各時代100人（合計600人）を抽出し、achiever_capabilities の19能力次元から Big Five を推定（z-score正規化）、10アーキタイプに分類した。明治・大正・昭和前期で arch_steady（堅実型）が203人と最多、arch_explorer（探究者）64人、arch_caregiver（養育者）27人。昭和後期・平成・令和では arch_explorer が171人（57%）と支配的になり、高O×高E組み合わせの台頭が見られた。</p>
+
+<p>persona_era_translation テーブルは10アーキタイプ × 6時代ペア = 60件の翻訳係数を保持する。例えば「明治の探究者型（北里柴三郎・湯川秀樹萌芽期）」を令和の探究者型（山中伸弥・本庶佑）に翻訳する際、明治期は「西洋知の翻訳的吸収」が中心能力、令和は「AI協働+異分野統合」へと能力地形が変化しているため、直接的な投影ではなく翻訳係数（0.55-0.80）と注意事項（cautions）が必要となる。</p>
+
+<p>scenario_persona_fit テーブル（120件）は、10アーキタイプ × 3未来 × 4シナリオ の適合度を提示する。R4レポートに基づく主要発見：(1) arch_explorer は全時代・全シナリオで最高適合（0.85+）。(2) arch_caregiver は2030で0.4と低いが、2050で0.85、2100で0.85へ急上昇（長寿社会・世代間倫理の中心化）。(3) arch_leader は SSP1 で 0.9 だが SSP3 では 0.4（分断社会では伝統的リーダー型が機能不全）。(4) arch_mediator は 2100 のポストヒューマン倫理交渉で中心的役割。</p>
+
+<p>本タスクの核心命題は、「明治・昭和の偉人パターンを現代の子どもに直接投影することの誤り」である。時代差異を翻訳係数で補正し、未来シナリオ分岐を併記することで、過去の成功パターンの安易な再現を回避し、未来の多元的可能性を保持する設計となっている。</p>
+</section>
+
+<section id="implications" class="chapter-section">
+<div class="chapter-number-label">タスク5</div>
+<h2 class="chapter-title">教育・採用・育成への含意</h2>
+
+<h3 class="section-heading">教育選択への含意</h3>
+<p>本DBの主要含意は、学校選択を「序列順位」ではなく「子どもの人格類型と学校文化の相性」として再定義することにある。direct_fit の校が必ずしも最適ではなく、stretch_fit の校が発達的により価値のある場合が多い。さらに、現在の評価と将来の能力地形での適合性を区別し、子どもが活躍する2050-2100年の社会条件を見据えた選択が必要である。具体的には、(1) Big Five 短縮版による子どもの人格スクリーニング、(2) 学校×人格適合マップの参照、(3) 複数シナリオでの相対的適合性の検討、(4) 親・子ども本人・教師の対話、の4ステップが推奨される。</p>
+
+<h3 class="section-heading">採用・人材評価への含意</h3>
+<p>本DBは採用選考にも適用可能である。応募者の人格類型 × 自社の文化類型 × 自社の事業時代適合性を評価する3軸モデルが提示できる。重要なのは「直接的な業務適合」だけでなく、「未来の事業環境での適合可能性」を考慮する視座である。例えば arch_caregiver（養育者）は2030年では4と低評価でも、2050年代の長寿社会・多世代協働では0.85と最高評価となる。短期的な業務適合と長期的な戦略人材としての価値を区別する評価設計が望ましい。</p>
+
+<h3 class="section-heading">育成・キャリア設計への含意</h3>
+<p>個人のキャリア設計においては、自分の人格類型を Big Five-J 等で同定し、適合する学校・組織・職業領域を確認しつつ、「stretch fit」を意識した発達課題に挑戦することが推奨される。歴史上の偉人パターンを「ロールモデル」として参照する際は、時代翻訳を意識し、現代・未来の能力地形に置き換えた等価像を考慮する必要がある。Subotnik の Talent Development Megamodel が示す「能力→適性→専門性→卓越性」の発達プロセスを、自分の人格類型に照らして長期的に設計することが核心である。</p>
+</section>
+
+<section id="limits" class="chapter-section">
+<div class="chapter-number-label">第6章</div>
+<h2 class="chapter-title">限界と倫理</h2>
+
+<p>本DBの限界は複数ある。第一に、jpms Layer 2（個人特性）は実データが未充実で、本DBは jpms person_archetype 10類型と理論的閾値に依拠している。実子ども集団からのBig Five測定データが将来必要である。第二に、era-talents-db の偉人プロファイルは achiever_capabilities からの推定であり、死者の人格直接評価ではない。estimation_method='capability_mapping_inferred' として明示している。第三に、Big Five は西洋心理学コンテキストで開発されたモデルで、日本・東アジアの集団調和や思想的深さを完全には捕捉しない可能性がある。</p>
+
+<p>倫理的には、本DBは「子どもの将来を決めつけない」「学校の序列付けをしない」「予測を強制しない」の3原則を厳守している。すべての出力は「相性・適合」フレームで構築され、決定論的言語を回避し、複数シナリオ併記によって不確実性を保持する。jpms から継承した未成年データの取り扱い原則（anonymized_only、削除依頼SOP）も継承する。</p>
+
+<p>本DBは現状で十分な学術的・実用的価値を持つが、継続的な改善が必要である。具体的には、(1) jpms Layer 2 の実データ拡充、(2) Big Five 推定式の信頼性検証、(3) 時代翻訳係数の専門家エリシテーション、(4) 未来シナリオ確率の定期更新、(5) ユーザーフィードバックループの実装、が今後の課題である。</p>
+
+<div class="pullquote">
+本DBは「予測装置」ではなく「問い方の道具」である。子ども・親・教育者が「どんな選択肢が考えられるか」「どんな未来に備えるか」を自律的に検討するための知的リソースとして機能する。
+</div>
+</section>
+
+<div class="book-footer">
+PST-DB 統合レポート v1.0 ・ 2026-05-06<br>
+GitHub: <a href="https://github.com/yuyanishimura0312/persona-school-trajectory-db" target="_blank">persona-school-trajectory-db</a> ・
+<a href="../dashboards/index.html">ダッシュボード</a> ・
+<a href="../index.html">トップ</a>
+</div>
+
+</main>
+</div>
+
+<script src="../css/textbook-init.js"></script>
+</body>
+</html>
